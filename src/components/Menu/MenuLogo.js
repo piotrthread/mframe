@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const MenuLogo = styled.span`
-  font-size: 25px;
+  font-size: 18px;
   color: white;
 `;
 
