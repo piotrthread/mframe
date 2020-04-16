@@ -11,10 +11,10 @@ const HeroWrapper = styled.div`
   flex-direction: column;
 
   @media (min-width: 768px) {
-    height: 60vw;
+    height: 60vh;
   }
   @media (min-width: 992px) {
-    height: 50vw;
+    height: 70vh;
   }
 `;
 
