@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const HeroWrapper = styled.div`
-  background-color: gray;
+  background-image: url("./images/hero.jpg");
   background-size: cover;
-  background-position-y: bottom;
+  background-position: center;
   height: 70vh;
   display: flex;
   align-items: center;
@@ -11,10 +11,10 @@ const HeroWrapper = styled.div`
   flex-direction: column;
 
   @media (min-width: 768px) {
-    height: 50vw;
+    height: 60vw;
   }
   @media (min-width: 992px) {
-    height: 40vw;
+    height: 50vw;
   }
 `;
 

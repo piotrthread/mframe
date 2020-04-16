@@ -6,7 +6,7 @@ const HeroTitle = styled.h1`
   font-style: italic;
   font-size: 7vw;
   @media (min-width: 576px) {
-    font-size: 30px;
+    font-size: 40px;
   }
 `;
 
