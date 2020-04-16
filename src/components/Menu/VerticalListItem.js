@@ -12,7 +12,7 @@ const VerticalListItem = styled.li`
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   &:hover {
-    color: rgba(255, 255, 255, 0.3);
+    color: #d7ff82;
   }
 `;
 

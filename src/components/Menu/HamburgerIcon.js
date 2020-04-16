@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const HamburgerIcon = styled.div`
-  background-color: ${(props) => (props.active ? "rgba(0, 0, 0, 0)" : "white")};
+  background-color: ${(props) =>
+    props.active ? "rgba(0, 0, 0, 0)" : "#d7ff82"};
   height: 3px;
   border-radius: 2px;
   width: 25px;
@@ -12,7 +13,7 @@ const HamburgerIcon = styled.div`
     content: "";
     position: absolute;
     display: block;
-    background-color: white;
+    background-color: #d7ff82;
     height: 3px;
     border-radius: 2px;
     width: 25px;

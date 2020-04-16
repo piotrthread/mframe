@@ -11,10 +11,10 @@ const HorizontalListItem = styled.li`
   justify-content: center;
   align-items: center;
   padding: 0 10px;
-  border-left: 1px solid gray;
+  border-left: 1px solid #d7ff82;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.3);
+    color: #d7ff82;
   }
   &:first-child {
     border: 0;
