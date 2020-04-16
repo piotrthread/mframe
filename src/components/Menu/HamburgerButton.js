@@ -10,10 +10,10 @@ const HamburgerButton = styled.button`
   height: 27px;
   outline: none;
   cursor: pointer;
-  transform: scale(0.85);
+  transform: scale(0.8);
 
   &:hover {
-    opacity: 0.5;
+    opacity: 0.7;
   }
   @media (min-width: 768px) {
     display: none;
