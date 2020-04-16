@@ -11,7 +11,11 @@ const HeroButton = styled.button`
   border-radius: 25px;
   cursor: pointer;
   outline: none;
-  color: #364021;
+  color: #0b0b0b;
+  &:hover {
+    color: #0b0b0b;
+    background-color: white;
+  }
 `;
 
 export default HeroButton;

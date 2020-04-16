@@ -4,6 +4,7 @@ import GlobalStyle from "./GlobalStyle";
 import Menu from "./components/Menu/Menu";
 import Hero from "./components/Hero/Hero";
 import TopMargin from "./components/Hero/TopMargin";
+import AboutUs from "./components/AboutUs/AboutUs";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Menu />
       <TopMargin />
       <Hero />
+      <AboutUs />
     </>
   );
 };
