@@ -5,6 +5,7 @@ const VerticalListWrapper = styled.ul`
   background-color: black;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   display: block;
+  z-index: 3;
 
   @media (min-width: 768px) {
     display: none;

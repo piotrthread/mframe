@@ -6,11 +6,12 @@ import HamburgerIcon from "./HamburgerIcon";
 import HamburgerButton from "./HamburgerButton";
 import MenuListVertical from "./MenuListVertical";
 import MenuListHorizontal from "./MenuListHorizontal";
+import NavWrapper from "./NavWrapper";
 
 const Menu = () => {
   const [isActive, setActive] = useState(false);
   return (
-    <>
+    <NavWrapper>
       <MenuWrapper>
         <MenuLogo>MFRAME</MenuLogo>
         <MenuListHorizontal />
@@ -19,7 +20,7 @@ const Menu = () => {
         </HamburgerButton>
       </MenuWrapper>
       {isActive ? <MenuListVertical /> : null}
-    </>
+    </NavWrapper>
   );
 };
 

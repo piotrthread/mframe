@@ -7,6 +7,7 @@ const MenuWrapper = styled.div`
   padding: 0 20px;
   background-color: black;
   height: 60px;
+  width: 100%;
 `;
 
 export default MenuWrapper;
