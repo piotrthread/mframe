@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-const Paragraph = styled.p`
-  font-weight: 300;
-  text-align: justify;
+const Video = styled.video`
+  width: 100vw;
   padding: 0 25px;
-  text-indent: 25px;
-  margin-bottom: 25px;
+  margin-top: 50px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   @media (min-width: 576px) {
     width: 80vw;
     padding: 0;
@@ -20,4 +20,4 @@ const Paragraph = styled.p`
   }
 `;
 
-export default Paragraph;
+export default Video;
