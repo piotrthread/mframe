@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 const Video = styled.video`
+  display: block;
   width: 100vw;
+  max-height: 56.25vw;
   padding: 0 25px;
   margin-top: 50px;
   -webkit-appearance: none;

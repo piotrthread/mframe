@@ -20,7 +20,7 @@ const App = () => {
       <Hero />
       <AboutUs />
       <Container>
-        <Video controls autoPlay={true} muted>
+        <Video controls autoPlay={true} muted width="100vw" height="auto">
           <source src="http://adsystem.pl/video/MFRAME.mov" type="video/mp4" />
         </Video>
       </Container>
