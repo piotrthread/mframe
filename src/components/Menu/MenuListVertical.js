@@ -6,12 +6,12 @@ import VerticalListItem from "./VerticalListItem";
 const MenuListVertical = () => {
   return (
     <VerticalListWrapper>
-      <VerticalListItem>O NAS</VerticalListItem>
-      <VerticalListItem>O SYSTEMIE</VerticalListItem>
-      <VerticalListItem>WIZUALIZACJE</VerticalListItem>
-      <VerticalListItem>REALIZACJE</VerticalListItem>
-      <VerticalListItem>MOŻLIWOŚCI</VerticalListItem>
-      <VerticalListItem>KONTAKT</VerticalListItem>
+      <VerticalListItem>o nas</VerticalListItem>
+      <VerticalListItem>o systemie</VerticalListItem>
+      <VerticalListItem>wizualizacje</VerticalListItem>
+      <VerticalListItem>realizacje</VerticalListItem>
+      <VerticalListItem>możliwości</VerticalListItem>
+      <VerticalListItem>kontakt</VerticalListItem>
     </VerticalListWrapper>
   );
 };

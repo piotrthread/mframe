@@ -4,17 +4,19 @@ const HeroWrapper = styled.div`
   background-image: url("./images/hero.jpg");
   background-size: cover;
   background-position: center;
-  height: 70vh;
+  position: relative;
+  height: 75vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
   flex-direction: column;
+  padding: 50px;
 
   @media (min-width: 768px) {
-    height: 60vh;
+    height: 85vh;
   }
   @media (min-width: 992px) {
-    height: 70vh;
+    height: 95vh;
   }
 `;
 

@@ -14,13 +14,12 @@ const Menu = () => {
   return (
     <NavWrapper>
       <MenuWrapper>
-        <MenuLogo>
-          <Green>M</Green>FRAME
-        </MenuLogo>
         <MenuListHorizontal />
+
         <HamburgerButton onClick={() => setActive(!isActive)}>
           {isActive ? <HamburgerIcon active /> : <HamburgerIcon />}
         </HamburgerButton>
+        <MenuLogo>mframe.</MenuLogo>
       </MenuWrapper>
       {isActive ? <MenuListVertical /> : null}
     </NavWrapper>

@@ -1,18 +1,28 @@
 import React from "react";
+import styled from "styled-components";
 
 import HeroWrapper from "./HeroWrapper";
 import HeroTitle from "./HeroTitle";
-import HeroButton from "./HeroButton";
 import Container from "./Container";
+import Button from "../Button/Button";
+import Heading from "../Heading/Heading";
+
+const Thin = styled.span`
+  font-weight: 200;
+`;
 
 const Hero = () => {
   return (
     <HeroWrapper>
-      <Container>
-        <HeroTitle>M-Frame</HeroTitle>
+      <HeroTitle>
+        Mobilne <Thin>zabudowy targowe.</Thin>
+      </HeroTitle>
+      <Button white>WIĘCEJ +</Button>
+      {/* <Container> */}
+      {/* <HeroTitle>M-Frame</HeroTitle>
         <HeroTitle secondary>Mobilne zabudowy targowe.</HeroTitle>
       </Container>
-      <HeroButton>WIĘCEJ</HeroButton>
+      <HeroButton>WIĘCEJ</HeroButton> */}
     </HeroWrapper>
   );
 };

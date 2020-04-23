@@ -4,7 +4,7 @@ const HamburgerButton = styled.button`
   -webkit-appearance: none;
   -moz-appearance: none;
   display: flex;
-  background-color: black;
+  background-color: white;
   border: 0;
   width: 27px;
   height: 27px;

@@ -3,19 +3,18 @@ import styled from "styled-components";
 const Button = styled.button`
   -webkit-appearance: none;
   -moz-appearance: none;
-  border: 0;
-  background-color: #d7ff82;
+  font-weight: 600;
   font-size: 15px;
-  width: 130px;
-  height: 50px;
-  border-radius: 25px;
+  border: 1px solid ${(props) => (props.white ? "white" : "black")};
+  background-color: rgba(0, 0, 0, 0);
+  padding: 25px 40px;
+  letter-spacing: 0.5px;
   cursor: pointer;
+  max-width: 155px;
   outline: none;
-  color: #0b0b0b;
-  margin: 25px 0;
+  color: ${(props) => (props.white ? "white" : "black")};
   &:hover {
-    color: white;
-    background-color: gray;
+    opacity: 0.6;
   }
 `;
 

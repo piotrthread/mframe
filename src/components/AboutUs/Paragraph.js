@@ -3,20 +3,18 @@ import styled from "styled-components";
 const Paragraph = styled.p`
   font-weight: 300;
   text-align: justify;
-  padding: 0 25px;
-  text-indent: 25px;
-  margin-bottom: 25px;
-  @media (min-width: 576px) {
-    width: 80vw;
-    padding: 0;
-  }
+  text-indent: 50px;
+  margin-bottom: 50px;
+  padding-left: 25px;
+
   @media (min-width: 768px) {
-    width: 70vw;
-    padding: 0;
+    padding-left: 100px;
   }
   @media (min-width: 992px) {
-    width: 60vw;
-    padding: 0;
+    padding-left: 150px;
+  }
+  @media (min-width: 1200px) {
+    padding-left: 275px;
   }
 `;
 
