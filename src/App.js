@@ -6,13 +6,17 @@ import Menu from "./components/Menu/Menu";
 import Hero from "./components/Hero/Hero";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Container from "./components/Container/Container";
+import Video from "./components/Video/Video";
 
 const App = () => {
   return (
     <>
       <GlobalStyle />
       <Menu />
-      <Hero />
+      {/* <Hero /> */}
+      <Video controls autoPlay={true} muted width="100vw" height="auto">
+        <source src="http://adsystem.pl/video/MFRAME.mov" type="video/mp4" />
+      </Video>
       <Container>
         <Heading bold="O" thin="nas" />
       </Container>
