@@ -20,16 +20,30 @@ const App = () => {
       <Menu />
       <Spacer />
       {/* <Hero /> */}
-      <Video
+      {/* <Video
         loop
-        autoPlay={true}
-        playsinline
         muted={true}
+        autoPlay={true}
+        playsInline={true}
         width="100vw"
         height="auto"
       >
         <source src="http://adsystem.pl/video/MFRAME.mov" type="video/mp4" />
-      </Video>
+      </Video> */}
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `
+        <video
+          loop
+          muted
+          autoplay
+          playsinline
+          width="100%"
+          
+         ><source src="http://adsystem.pl/video/MFRAME.mov" type="video/mp4" /></video>
+      `,
+        }}
+      ></div>
       <Container>
         <Heading bold="O" thin="nas" />
       </Container>
