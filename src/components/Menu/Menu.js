@@ -7,7 +7,6 @@ import HamburgerButton from "./HamburgerButton";
 import MenuListVertical from "./MenuListVertical";
 import MenuListHorizontal from "./MenuListHorizontal";
 import NavWrapper from "./NavWrapper";
-import Green from "./Green";
 
 const Menu = () => {
   const [isActive, setActive] = useState(false);

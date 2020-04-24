@@ -3,9 +3,7 @@ import styled from "styled-components";
 
 import HeroWrapper from "./HeroWrapper";
 import HeroTitle from "./HeroTitle";
-import Container from "./Container";
 import Button from "../Button/Button";
-import Heading from "../Heading/Heading";
 
 const Thin = styled.span`
   font-weight: 200;

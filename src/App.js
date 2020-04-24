@@ -20,7 +20,14 @@ const App = () => {
       <Menu />
       <Spacer />
       {/* <Hero /> */}
-      <Video controls autoPlay={true} muted width="100vw" height="auto">
+      <Video
+        loop
+        autoPlay={true}
+        playsinline
+        muted={true}
+        width="100vw"
+        height="auto"
+      >
         <source src="http://adsystem.pl/video/MFRAME.mov" type="video/mp4" />
       </Video>
       <Container>
