@@ -28,7 +28,7 @@ const App = () => {
         width="100vw"
         height="auto"
       >
-        <source src="http://adsystem.pl/video/MFRAME.mov" type="video/mp4" />
+        <source src="http://adsystem.pl/video/MFRAME.mp4" type="video/mp4" />
       </Video>
       <Container>
         <Heading bold="O" thin="nas" />
