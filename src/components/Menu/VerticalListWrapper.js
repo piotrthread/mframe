@@ -11,7 +11,7 @@ const VerticalListWrapper = styled.ul`
   z-index: 3;
   padding-right: 25px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1075px) {
     display: none;
   }
 `;

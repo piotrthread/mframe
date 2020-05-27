@@ -15,7 +15,7 @@ const HamburgerButton = styled.button`
   &:hover {
     opacity: 0.7;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1075px) {
     display: none;
   }
 `;
