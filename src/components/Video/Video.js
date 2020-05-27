@@ -6,6 +6,8 @@ const Video = styled.video`
   max-height: 56.25vw;
   -webkit-appearance: none;
   -moz-appearance: none;
+  position: absolute;
+  top: -50px;
 `;
 
 export default Video;

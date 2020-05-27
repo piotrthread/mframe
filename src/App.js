@@ -12,6 +12,11 @@ import Video from "./components/Video/Video";
 const Spacer = styled.div`
   height: 70px;
 `;
+const VideoWrapper = styled.div`
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+`;
 
 const App = () => {
   return (
@@ -20,16 +25,18 @@ const App = () => {
       <Menu />
       <Spacer />
       {/* <Hero /> */}
-      <Video
-        loop
-        muted={true}
-        autoPlay={true}
-        playsInline={true}
-        width="100vw"
-        height="auto"
-      >
-        <source src="http://adsystem.pl/video/MFRAME.mov" type="video/mp4" />
-      </Video>
+      <VideoWrapper>
+        <Video
+          loop
+          muted={true}
+          autoPlay={true}
+          playsInline={true}
+          width="100vw"
+          height="auto"
+        >
+          <source src="http://adsystem.pl/video/MFRAME.mov" type="video/mp4" />
+        </Video>
+      </VideoWrapper>
       <Container>
         <Heading bold="O" thin="nas" />
       </Container>
