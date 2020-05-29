@@ -11,11 +11,11 @@ const VerticalListItem = styled.li`
   align-items: center;
   padding: 10px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 
   &:hover {
     opacity: 0.4;
-    padding-right: 10px;
+    padding-right: 20px;
   }
 
   /* color: black;
