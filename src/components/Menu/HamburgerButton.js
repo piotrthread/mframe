@@ -4,6 +4,7 @@ const HamburgerButton = styled.button`
   -webkit-appearance: none;
   -moz-appearance: none;
   display: flex;
+  align-items: center;
   background-color: white;
   border: 0;
   width: 27px;
@@ -13,7 +14,7 @@ const HamburgerButton = styled.button`
   transform: scale(0.8);
 
   &:hover {
-    opacity: 0.7;
+    opacity: 0.4;
   }
   @media (min-width: 1075px) {
     display: none;

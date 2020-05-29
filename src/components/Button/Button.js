@@ -13,6 +13,7 @@ const Button = styled.button`
   max-width: 155px;
   outline: none;
   color: ${(props) => (props.white ? "white" : "black")};
+  transition: all 0.3s ease;
   &:hover {
     opacity: 0.6;
   }
