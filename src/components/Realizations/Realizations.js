@@ -12,15 +12,15 @@ const Image = styled.img`
   width: 100%;
 `;
 
-const Visuals = () => {
-  const pics = Array(25).fill(null);
+const Realizations = () => {
+  const pics = Array(22).fill(null);
   return (
     <MasonryWrapper>
       {pics.map((element, index) => {
         return (
-          <Image
-            src={`./images/wizualizacje/mframe_ (${index+1}).jpg`}
-            alt={index}
+          <Image key={index}
+            src={`./images/realizacje/mframe_ (${index+1}).jpg`}
+            alt={index+1}
           />
         );
       })}
@@ -28,4 +28,4 @@ const Visuals = () => {
   );
 };
 
-export default Visuals;
+export default Realizations;

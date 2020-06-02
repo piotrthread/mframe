@@ -10,6 +10,7 @@ import Video from "./components/Video/Video";
 import Visuals from "./components/Visuals/Visuals";
 import Possibilities from "./components/Possibilities/Possibilities";
 import Footer from "./components/Footer/Footer";
+import Realizations from "./components/Realizations/Realizations"
 
 const Spacer = styled.div`
   height: 70px;
@@ -51,7 +52,7 @@ const App = () => {
         <Heading bold="Możliwości" thin="mframe" />
         <Possibilities />
         <Heading bold="Realizacje" thin="mframe" />
-        <Visuals />
+        <Realizations/>
       </Container>
       <Footer/>
     </>
