@@ -10,7 +10,9 @@ import Video from "./components/Video/Video";
 import Visuals from "./components/Visuals/Visuals";
 import Possibilities from "./components/Possibilities/Possibilities";
 import Footer from "./components/Footer/Footer";
-import Realizations from "./components/Realizations/Realizations"
+import Realizations from "./components/Realizations/Realizations";
+import Animage from "./components/Animage/Animage";
+import AboutMframe from "./components/AboutMframe/AboutMframe";
 
 const Spacer = styled.div`
   height: 70px;
@@ -47,14 +49,17 @@ const App = () => {
       </Container>
       <AboutUs />
       <Container>
-        <Heading bold="Wizualizacje" thin="mframe" />
-        <Visuals />
         <Heading bold="Możliwości" thin="mframe" />
         <Possibilities />
+        <Heading bold="O" thin="systemie" />
+        <Animage />
+        <AboutMframe />
+        <Heading bold="Wizualizacje" thin="mframe" />
+        <Visuals />
         <Heading bold="Realizacje" thin="mframe" />
-        <Realizations/>
+        <Realizations />
       </Container>
-      <Footer/>
+      <Footer />
     </>
   );
 };

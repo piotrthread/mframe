@@ -1,0 +1,52 @@
+import React, { useState } from "react";
+import styled from "styled-components";
+
+const Image = styled.img`
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  transition: all 0.4s ease;
+`;
+const Wrapper = styled.div`
+  width: 100%;
+  position: relative;
+  height: 40vw;
+  overflow: hidden;
+  cursor: pointer;
+
+  @media (min-width: 992px) {
+    height: 33vw;
+  }
+  @media (min-width: 1200px) {
+    height: 28vw;
+  }
+  @media (min-width: 1430px) {
+    height: 30vw;
+  }
+  @media (min-width: 1590px) {
+    height: 32vw;
+  }
+`;
+
+const Animage = () => {
+  const [hover, setHover] = useState(false);
+  const toggleImage = () => setHover(!hover);
+  const hideImage = () => setHover(false);
+  const showImage = () => setHover(true);
+  return (
+    <Wrapper
+      onMouseOver={showImage}
+      onMouseOut={hideImage}
+      onClick={toggleImage}
+    >
+      <Image src="./images/grafa.jpg" />
+      <Image
+        src="./images/rama.jpg"
+        style={!hover ? { opacity: 0 } : { opacity: 1 }}
+      />
+    </Wrapper>
+  );
+};
+
+export default Animage;
