@@ -4,65 +4,93 @@ import Button from "../Button/Button";
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row;
+  align-items: space-between;
+  flex-wrap: wrap;
 `;
 
 const Paragraph = styled.p`
   font-weight: 300;
   text-align: justify;
-  text-indent: 50px;
-  margin-bottom: 35px;
-  margin-top: 35px;
+  font-size: 15px;
+  padding: 5px;
 `;
-
-const ImgWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
+const Title = styled.h4`
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  margin:15px 0;
 `;
 
 const Img = styled.img`
-width:32%;
-margin:0 5px;
+  width: 100%;
+`;
+
+const Feature = styled.div`
+  flex-basis: 33.3333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:.5em;
 `;
 
 const Possibilities = () => {
   return (
     <Wrapper>
-      <Paragraph>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem odit
-        vitae laudantium quisquam iste ex officiis amet dolorum dolores, qui
-        libero est unde magni modi optio quos maxime placeat veniam! Laboriosam
-        non tempora quod ut, deleniti dolore facere rem fugiat sit optio
-        incidunt libero est vitae quos doloremque aut ipsa reiciendis a
-        distinctio ex ad, ullam illum. Corporis, impedit omnis? Nemo voluptates
-        nostrum accusamus a maxime ut error ex sint beatae, consectetur,
-        architecto et dignissimos quia corporis amet. Ipsam laudantium quam
-        cumque consectetur voluptates eligendi beatae corrupti velit autem amet!
-        Reprehenderit, eos eius quia, deserunt explicabo ut iusto expedita
-        consequatur amet facere excepturi et, quaerat recusandae maiores ea sit
-        accusamus!
-      </Paragraph>
-      <ImgWrapper>
+      <Feature>
         <Img src="https://picsum.photos/300/300?random=1" />
+        <Title>Lorem Ipsum</Title>
+        <Paragraph>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem odit
+          vitae laudantium quisquam iste ex officiis amet dolorum dolores, qui
+          libero est unde magni modi optio quos maxime placeat veniam!
+        </Paragraph>
+      </Feature>
+      <Feature>
         <Img src="https://picsum.photos/300/300?random=2" />
+        <Title>Lorem Ipsum</Title>
+        <Paragraph>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem odit
+          vitae laudantium quisquam iste ex officiis amet dolorum dolores, qui
+          libero est unde magni modi optio quos maxime placeat veniam!
+        </Paragraph>
+      </Feature>
+      <Feature>
         <Img src="https://picsum.photos/300/300?random=3" />
-      </ImgWrapper>
-      <Paragraph>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem odit
-        vitae laudantium quisquam iste ex officiis amet dolorum dolores, qui
-        libero est unde magni modi optio quos maxime placeat veniam! Laboriosam
-        non tempora quod ut, deleniti dolore facere rem fugiat sit optio
-        incidunt libero est vitae quos doloremque aut ipsa reiciendis a
-        distinctio ex ad, ullam illum. Corporis, impedit omnis? Nemo voluptates
-        nostrum accusamus a maxime ut error ex sint beatae, consectetur,
-        architecto et dignissimos quia corporis amet. Ipsam laudantium quam
-        cumque consectetur voluptates eligendi beatae corrupti velit autem amet!
-        Reprehenderit, eos eius quia, deserunt explicabo ut iusto expedita
-        consequatur amet facere excepturi et, quaerat recusandae maiores ea sit
-        accusamus!
-      </Paragraph>
-      <Button>WIĘCEJ</Button>
+        <Title>Lorem Ipsum</Title>
+        <Paragraph>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem odit
+          vitae laudantium quisquam iste ex officiis amet dolorum dolores, qui
+          libero est unde magni modi optio quos maxime placeat veniam!
+        </Paragraph>
+      </Feature>
+      <Feature>
+        <Img src="https://picsum.photos/300/300?random=4" />
+        <Title>Lorem Ipsum</Title>
+        <Paragraph>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem odit
+          vitae laudantium quisquam iste ex officiis amet dolorum dolores, qui
+          libero est unde magni modi optio quos maxime placeat veniam!
+        </Paragraph>
+      </Feature>
+      <Feature>
+        <Img src="https://picsum.photos/300/300?random=5" />
+        <Title>Lorem Ipsum</Title>
+        <Paragraph>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem odit
+          vitae laudantium quisquam iste ex officiis amet dolorum dolores, qui
+          libero est unde magni modi optio quos maxime placeat veniam!
+        </Paragraph>
+      </Feature>
+      <Feature>
+        <Img src="https://picsum.photos/300/300?random=6" />
+        <Title>Lorem Ipsum</Title>
+        <Paragraph>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem odit
+          vitae laudantium quisquam iste ex officiis amet dolorum dolores, qui
+          libero est unde magni modi optio quos maxime placeat veniam!
+        </Paragraph>
+      </Feature>
     </Wrapper>
   );
 };

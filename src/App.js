@@ -9,6 +9,7 @@ import Container from "./components/Container/Container";
 import Video from "./components/Video/Video";
 import Visuals from "./components/Visuals/Visuals";
 import Possibilities from "./components/Possibilities/Possibilities";
+import Footer from "./components/Footer/Footer";
 
 const Spacer = styled.div`
   height: 70px;
@@ -46,22 +47,13 @@ const App = () => {
       <AboutUs />
       <Container>
         <Heading bold="Wizualizacje" thin="mframe" />
-      </Container>
-      <Container>
         <Visuals />
-      </Container>
-      <Container>
         <Heading bold="Możliwości" thin="mframe" />
-      </Container>
-      <Container>
-      <Possibilities/>
-      </Container>
-      <Container>
+        <Possibilities />
         <Heading bold="Realizacje" thin="mframe" />
-      </Container>
-      <Container>
         <Visuals />
       </Container>
+      <Footer/>
     </>
   );
 };
