@@ -6,7 +6,7 @@ const FooterWrapper = styled.div`
   font-weight: 300px;
   font-size: 13px;
   height: 350px;
-  margin-top: 50px;
+  margin-top: 150px;
   display: flex;
   justify-content: center;
   flex-direction: column;
