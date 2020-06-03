@@ -46,15 +46,18 @@ const App = () => {
       </VideoWrapper>
       <Container>
         <Heading bold="O" thin="systemie" />
-
-        <AboutMframe />
-        <Animage />
       </Container>
+      <AboutMframe />
+      <Container></Container>
       <Container>
         <Heading bold="Możliwości" thin="mframe" />
+        <Animage />
         <Possibilities />
         <Heading bold="Wizualizacje" thin="mframe" />
         <Visuals />
+      </Container>
+
+      <Container>
         <Heading bold="Realizacje" thin="mframe" />
         <Realizations />
         <Heading bold="O" thin="nas" />

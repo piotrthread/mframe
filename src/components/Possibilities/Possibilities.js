@@ -95,33 +95,6 @@ const Possibilities = () => {
           libero est  quos maxime placeat veniam!
         </Paragraph>
       </Feature>
-      <Feature>
-        <Img src="https://via.placeholder.com/300" />
-        <HeadingSmall bold="Oświetlenie" />
-        <Paragraph>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem odit
-          vitae laudantium quisquam iste ex officiis amet dolorum dolores, qui
-           magni modi optio quos maxime placeat veniam!
-        </Paragraph>
-      </Feature>
-      <Feature>
-        <Img src="https://via.placeholder.com/300" />
-        <HeadingSmall bold="Meble" />
-        <Paragraph>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem odit
-          vitae laudantium quisquam  amet dolorum dolores, qui
-          libero est unde magni modi optio quos maxime placeat veniam!
-        </Paragraph>
-      </Feature>
-      <Feature>
-        <Img src="https://via.placeholder.com/300" />
-        <HeadingSmall bold="Montaż" thin="Produktów" />
-        <Paragraph>
-          Lorem, ipsum dolor  adipisicing elit. Quidem odit
-          vitae laudantium quisquam iste ex officiis amet dolorum dolores, qui
-          libero est unde magni modi optio quos maxime placeat veniam!
-        </Paragraph>
-      </Feature>
     </Wrapper>
   );
 };

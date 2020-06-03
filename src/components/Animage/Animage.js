@@ -8,11 +8,21 @@ const Image = styled.img`
   z-index: 3;
   transition: all 0.4s ease;
 `;
+
+const Container = styled.div`
+display:flex;
+justify-content:center;
+padding:10px;
+`;
+
 const Wrapper = styled.div`
-  width: 100%;
+  width:100%;
+  display: flex;
+  justify-content: center;
   position: relative;
   height: 40vw;
   overflow: hidden;
+  margin-bottom: 50px;
   cursor: pointer;
 
   @media (min-width: 992px) {
@@ -35,6 +45,7 @@ const Animage = () => {
   const hideImage = () => setHover(false);
   const showImage = () => setHover(true);
   return (
+    <Container>
     <Wrapper
       onMouseOver={showImage}
       onMouseOut={hideImage}
@@ -46,6 +57,7 @@ const Animage = () => {
         style={!hover ? { opacity: 0 } : { opacity: 1 }}
       />
     </Wrapper>
+    </Container>
   );
 };
 
