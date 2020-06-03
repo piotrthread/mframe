@@ -10,14 +10,14 @@ const Image = styled.img`
 `;
 
 const Container = styled.div`
-display:flex;
-justify-content:center;
-padding:10px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 `;
 
 const Wrapper = styled.div`
-  width:100%;
-  display: flex;
+  width: 100%;
+  display: none;
   justify-content: center;
   position: relative;
   height: 40vw;
@@ -25,6 +25,9 @@ const Wrapper = styled.div`
   margin-bottom: 50px;
   cursor: pointer;
 
+  @media (min-width: 920px) {
+    display: flex;
+  }
   @media (min-width: 992px) {
     height: 33vw;
   }
@@ -46,17 +49,17 @@ const Animage = () => {
   const showImage = () => setHover(true);
   return (
     <Container>
-    <Wrapper
-      onMouseOver={showImage}
-      onMouseOut={hideImage}
-      onClick={toggleImage}
-    >
-      <Image src="./images/grafa.jpg" />
-      <Image
-        src="./images/rama.jpg"
-        style={!hover ? { opacity: 0 } : { opacity: 1 }}
-      />
-    </Wrapper>
+      <Wrapper
+        onMouseOver={showImage}
+        onMouseOut={hideImage}
+        onClick={toggleImage}
+      >
+        <Image src="./images/grafa.jpg" />
+        <Image
+          src="./images/rama.jpg"
+          style={!hover ? { opacity: 0 } : { opacity: 1 }}
+        />
+      </Wrapper>
     </Container>
   );
 };

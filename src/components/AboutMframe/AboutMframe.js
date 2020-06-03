@@ -7,7 +7,7 @@ import Image from "./Image";
 import VerticalContainer from "./VerticalContainer";
 
 const ImageMobile = styled.div`
-  background-image: url("./images/about.jpg");
+  background-image: url("./images/hero.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -51,7 +51,7 @@ const Button = styled.button`
 const AboutMframe = () => {
   return (
     <AboutWrapper>
-      <ImageMobile src="./images/about.jpg" />
+      <ImageMobile />
       <VerticalContainer>
         <Paragraph>
           Adsystem to jakość i wieloletnie doświadczenie, którym chętnie
@@ -72,7 +72,7 @@ const AboutMframe = () => {
         </Paragraph>
         <Button>WIĘCEJ +</Button>
       </VerticalContainer>
-      <Image src="./images/about.jpg" />
+      <Image/>
     </AboutWrapper>
   );
 };
