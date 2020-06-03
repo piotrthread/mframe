@@ -17,7 +17,6 @@ const Paragraph = styled.p`
   font-size: 15px;
 `;
 
-
 const Img = styled.img`
   width: 100%;
 `;
@@ -42,57 +41,42 @@ const Possibilities = () => {
   return (
     <Wrapper>
       <Feature>
-        <Img src="https://via.placeholder.com/300" />
+        <Img src="./images/placeholder1x1.jpg" />
+        <HeadingSmall bold="Akcesoria" />
+        <Paragraph>
+          oświetlenie LED, półka, panele na zawieszki, uchwyty TV, kantorek,
+          łuki
+        </Paragraph>
+      </Feature>
+      <Feature>
+        <Img src="./images/placeholder1x1.jpg" />
+        <HeadingSmall bold="Wyposażenie" thin="stoiska" />
+        <Paragraph>
+          logotypy ze styroduru, logotypy podświetlane, uchwyty na katalogi,
+          ekspozycja produktów klienta, meble, lady
+        </Paragraph>
+      </Feature>
+      <Feature>
+        <Img src="./images/placeholder1x1.jpg" />
         <HeadingSmall bold="Kasetony" thin="LED" />
-        <Paragraph>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem odit
-          vitae laudantium quisquam iste ex officiis amet dolorum dolores, qui
-          libero est unde quos maxime placeat veniam!
-        </Paragraph>
+        <Paragraph>kaseton LMD, dynamic Lightbox, led skin</Paragraph>
       </Feature>
       <Feature>
-        <Img src="https://via.placeholder.com/300" />
-        <HeadingSmall bold="Podłoga" />
-        <Paragraph>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem odit
-          iste ex officiis amet dolorum dolores, qui libero est unde magni modi
-          optio quos maxime placeat veniam!
-        </Paragraph>
+        <Img src="./images/placeholder1x1.jpg" />
+        <HeadingSmall bold="Podłoga" thin="systemowa" />
+        <Paragraph>panele jednokolorowe, drukowane, wykładzina</Paragraph>
       </Feature>
       <Feature>
-        <Img src="https://via.placeholder.com/300" />
-        <HeadingSmall bold="Kaseton" thin="Dynamiczny" />
-        <Paragraph>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem odit
-          vitae laudantium quisquam amet dolorum dolores, qui libero est unde
-          magni modi optio quos maxime placeat veniam!
-        </Paragraph>
-      </Feature>
-      <Feature>
-        <Img src="https://via.placeholder.com/300" />
-        <HeadingSmall bold="LED" thin="Skin" />
-        <Paragraph>
-          Lorem, ipsum dolor sit amet Quidem odit
-          vitae laudantium quisquam iste ex officiis amet dolorum dolores, qui
-          libero est unde magni modi optio quos maxime placeat veniam!
-        </Paragraph>
-      </Feature>
-      <Feature>
-        <Img src="https://via.placeholder.com/300" />
+        <Img src="./images/placeholder1x1.jpg" />
         <HeadingSmall bold="Systemy" thin="Podwieszane" />
-        <Paragraph>
-          Lorem, ipsum dolor sit  adipisicing elit. Quidem odit
-          vitae laudantium quisquam iste ex officiis amet dolorum dolores, qui
-          libero est unde magni modi optio quos maxime placeat veniam!
-        </Paragraph>
+        <Paragraph>vario, kaseton, quadro</Paragraph>
       </Feature>
       <Feature>
-        <Img src="https://via.placeholder.com/300" />
-        <HeadingSmall bold="Logo" thin="Styrodur" />
+        <Img src="./images/placeholder1x1.jpg" />
+        <HeadingSmall bold="Usługi" />
         <Paragraph>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem odit
-          vitae laudantium quisquam iste ex officiis amet dolorum dolores, qui
-          libero est  quos maxime placeat veniam!
+          logistyka, montaż, support, magazynowanie, demontaż, stoisko 'pod
+          klucz'
         </Paragraph>
       </Feature>
     </Wrapper>
