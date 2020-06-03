@@ -5,6 +5,7 @@ const Paragraph = styled.p`
   text-align: justify;
   text-indent: 50px;
   padding-left: 25px;
+  padding-top: 50px;
 
   @media (min-width: 768px) {
     padding-left: 50px;

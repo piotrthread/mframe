@@ -41,7 +41,7 @@ const App = () => {
           width="100vw"
           height="auto"
         >
-          <source src="http://adsystem.pl/video/MFRAME.mov" type="video/mp4" />
+          <source src="http://adsystem.pl/video/MFRAME.mp4" type="video/mp4" />
         </Video>
       </VideoWrapper>
       <Container>
@@ -50,11 +50,11 @@ const App = () => {
       <AboutMframe />
       <Container></Container>
       <Container>
+        <Heading bold="Wizualizacje" thin="mframe" />
+        <Visuals />
         <Heading bold="Możliwości" thin="mframe" />
         <Animage />
         <Possibilities />
-        <Heading bold="Wizualizacje" thin="mframe" />
-        <Visuals />
       </Container>
 
       <Container>

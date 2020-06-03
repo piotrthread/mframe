@@ -6,50 +6,52 @@ import Paragraph from "./Paragraph";
 import Image from "./Image";
 import VerticalContainer from "./VerticalContainer";
 
-const ImageMobile = styled.img`
-  position: absolute;
-  bottom: -165px;
+const ImageMobile = styled.div`
+  background-image: url("./images/about.jpg");
+  background-size: cover;
+  background-position: center;
   width: 100%;
   display: block;
   margin-bottom: 50px;
   padding: 0 25px;
+  height: 400px;
   @media (min-width: 768px) {
     padding: 0 50px;
+    height: 600px;
   }
   @media (min-width: 992px) {
     padding: 0 130px;
-    height: 800px;
-  }
-  @media (min-width: 1050px) {
-    display: none;
-  }
-`;
-const ImgWrapper = styled.div`
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  width: 100%;
-  margin-bottom: 25px;
-  position: relative;
-  @media (min-width: 440px) {
-    height: 50vw;
-  }
-  @media (min-width: 658px) {
-    height: 400px;
+    height: 500px;
   }
   @media (min-width: 1050px) {
     display: none;
   }
 `;
 
+const Button = styled.button`
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-weight: 600;
+  font-size: 15px;
+  border: 1px solid ${(props) => (props.white ? "white" : "black")};
+  background-color: rgba(0, 0, 0, 0);
+  padding: 25px 40px;
+  letter-spacing: 0.5px;
+  margin-top: 50px;
+  cursor: pointer;
+  max-width: 200px;
+  outline: none;
+  color: ${(props) => (props.white ? "white" : "black")};
+  transition: all 0.3s ease;
+  &:hover {
+    opacity: 0.6;
+  }
+`;
+
 const AboutUs = () => {
   return (
     <AboutWrapper>
-      <ImgWrapper>
-        <ImageMobile src="./images/about.jpg" />
-      </ImgWrapper>
-      <Image src="./images/about.jpg" />
+      <ImageMobile />
       <VerticalContainer>
         <Paragraph>
           Adsystem to jakość i wieloletnie doświadczenie, którym chętnie
@@ -68,8 +70,9 @@ const AboutUs = () => {
           ulotki, zapoznaj się z asortymentem na stronie lub skontaktuj się z
           nami. Służymy swoją pomocą przy wyborze najlepszych rozwiązań!
         </Paragraph>
-        {/* <Button>WIĘCEJ +</Button> */}
+        <Button>ADSYSTEM +</Button>
       </VerticalContainer>
+      <Image />
     </AboutWrapper>
   );
 };
