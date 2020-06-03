@@ -45,20 +45,21 @@ const App = () => {
         </Video>
       </VideoWrapper>
       <Container>
-        <Heading bold="O" thin="nas" />
+        <Heading bold="O" thin="systemie" />
+
+        <AboutMframe />
+        <Animage />
       </Container>
-      <AboutUs />
       <Container>
         <Heading bold="Możliwości" thin="mframe" />
         <Possibilities />
-        <Heading bold="O" thin="systemie" />
-        <Animage />
-        <AboutMframe />
         <Heading bold="Wizualizacje" thin="mframe" />
         <Visuals />
         <Heading bold="Realizacje" thin="mframe" />
         <Realizations />
+        <Heading bold="O" thin="nas" />
       </Container>
+      <AboutUs />
       <Footer />
     </>
   );
