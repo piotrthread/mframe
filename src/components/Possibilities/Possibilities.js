@@ -17,7 +17,6 @@ const Paragraph = styled.p`
   font-size: 15px;
 `;
 
-const Title = styled.h4``;
 
 const Img = styled.img`
   width: 100%;

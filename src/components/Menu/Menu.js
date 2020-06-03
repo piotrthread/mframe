@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import MenuWrapper from "./MenuWrapper";
 import MenuLogo from "./MenuLogo";
-import MenuSublogo from "./MenuSublogo";
+// import MenuSublogo from "./MenuSublogo";
 import HamburgerIcon from "./HamburgerIcon";
 import HamburgerButton from "./HamburgerButton";
 import MenuListVertical from "./MenuListVertical";
@@ -15,7 +15,7 @@ const Menu = () => {
     <NavWrapper>
       <MenuWrapper>
         <MenuLogo>mframe.</MenuLogo>
-        <MenuSublogo>mobilne stoiska targowe</MenuSublogo>
+        {/* <MenuSublogo>mobilne stoiska targowe</MenuSublogo> */}
         <MenuListHorizontal />
 
         <HamburgerButton onClick={() => setActive(!isActive)}>

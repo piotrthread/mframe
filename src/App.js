@@ -15,10 +15,10 @@ import Animage from "./components/Animage/Animage";
 import AboutMframe from "./components/AboutMframe/AboutMframe";
 
 const Spacer = styled.div`
-  height: 70px;
+  height: 75px;
 `;
 const VideoWrapper = styled.div`
-  height: 50vw;
+  height: 45vw;
   overflow: hidden;
   position: relative;
   @media (min-width: 1075px) {
