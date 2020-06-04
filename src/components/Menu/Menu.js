@@ -8,11 +8,13 @@ import HamburgerButton from "./HamburgerButton";
 import MenuListVertical from "./MenuListVertical";
 import MenuListHorizontal from "./MenuListHorizontal";
 import NavWrapper from "./NavWrapper";
+import Modal from "../Modal/Modal"
 
 const Menu = () => {
   const [isActive, setActive] = useState(false);
   return (
     <NavWrapper>
+      <Modal/>
       <MenuWrapper>
         <MenuLogo>mframe.</MenuLogo>
         {/* <MenuSublogo>mobilne stoiska targowe</MenuSublogo> */}

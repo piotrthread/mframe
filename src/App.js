@@ -13,6 +13,7 @@ import Footer from "./components/Footer/Footer";
 import Realizations from "./components/Realizations/Realizations";
 import Animage from "./components/Animage/Animage";
 import AboutMframe from "./components/AboutMframe/AboutMframe";
+import StateProvider from "./StateProvider";
 
 const Spacer = styled.div`
   height: 75px;
@@ -28,7 +29,7 @@ const VideoWrapper = styled.div`
 
 const App = () => {
   return (
-    <>
+    <StateProvider>
       <GlobalStyle />
       <Menu />
       <Spacer />
@@ -64,7 +65,7 @@ const App = () => {
       </Container>
       <AboutUs />
       <Footer />
-    </>
+    </StateProvider>
   );
 };
 
