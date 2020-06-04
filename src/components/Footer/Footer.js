@@ -9,6 +9,18 @@ const MenuLogo = styled.span`
   position: absolute;
   top: -40px;
   right: 25px;
+  &::before {
+    content: "a.";
+    display: block;
+    position: absolute;
+    color: white;
+    width: 200px;
+    height: 200px;
+    opacity: 0.08;
+    transform: scale(5);
+    top: 100px;
+    right: -200px;
+  }
 `;
 const Paragraph = styled.p`
   font-weight: 700;
@@ -25,11 +37,11 @@ const Adress = styled.p`
 const SocialContainer = styled.div`
   display: flex;
   justify-content: flex-start;
-  margin-top:25px;
+  margin-top: 25px;
 `;
 const Icon = styled.img`
   width: 40px;
-  height:40px;
+  height: 40px;
   margin-right: 20px;
 `;
 

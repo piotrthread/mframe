@@ -11,6 +11,7 @@ const FooterWrapper = styled.div`
   justify-content: flex-start;
   padding: 50px;
   position: relative;
+  overflow: hidden;
 `;
 
 export default FooterWrapper;
