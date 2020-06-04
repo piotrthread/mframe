@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
+import Context from "../../context";
 
 const MasonryWrapper = styled.div`
   column-count: 2;
@@ -27,7 +28,7 @@ const Container = styled.div`
   @media (min-width: 1600px) {
     height: 800px;
   }
-  &::before {
+  /* &::before {
     display: block;
     content: "";
     position: absolute;
@@ -41,6 +42,16 @@ const Container = styled.div`
       rgba(255, 255, 255, 0) 100%
     );
     bottom: 0;
+  } */
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    bottom: 0;
   }
   &::after {
     display: block;
@@ -48,11 +59,11 @@ const Container = styled.div`
     position: absolute;
     z-index: 5;
     width: 100%;
-    height: 35px;
-    background: url("./images/touch.svg") no-repeat;
+    height: 20px;
+    background: url("./images/arrow.png") no-repeat;
     background-size: contain;
     background-position: center;
-    bottom: 25px;
+    bottom: 5px;
   }
 `;
 
@@ -63,9 +74,10 @@ const Image = styled.img`
 `;
 
 const Visuals = () => {
+  const { dispatch } = useContext(Context);
   const pics = Array(22).fill(null);
   return (
-    <Container>
+    <Container onClick={()=>dispatch("SHOW_VISUALS_MODAL")}>
       <MasonryWrapper>
         {pics.map((element, index) => {
           return (

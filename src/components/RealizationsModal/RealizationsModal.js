@@ -4,8 +4,6 @@ import styled from "styled-components";
 
 import Heading from "../Heading/Heading";
 
-import { modals } from "../../data";
-
 const Button = styled.button`
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -46,22 +44,17 @@ const ModalWrapper = styled.div`
   overflow: scroll;
 `;
 
-const Modal = () => {
+const RealizationsModal = () => {
   const { state, dispatch } = useContext(Context);
-  const hideModal = () => dispatch("HIDE_MODAL");
-  const modal = modals[state.modalId];
+  const hideModal = () => dispatch("HIDE_REALIZATIONS_MODAL");
   return (
     <>
-      {state.modalVisible ? (
+      {state.realizationsModalVisible ? (
         <ModalWrapper>
           <Heading
-            bold={modal.name}
-            thin={modal.subname ? modal.subname : null}
+            bold="Realizacje"
+            thin="mframe"
           />
-          {modal.images.map((img, index) => (
-            <img src={img} alt={index} />
-          ))}
-          <p>{modal.info}</p>
           <Button onClick={hideModal}>
             <Icon src="./images/close.png" />
           </Button>
@@ -71,4 +64,4 @@ const Modal = () => {
   );
 };
 
-export default Modal;
+export default RealizationsModal;

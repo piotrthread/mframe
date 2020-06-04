@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import Context from "../../context";
 
 import MenuWrapper from "./MenuWrapper";
 import MenuLogo from "./MenuLogo";
@@ -9,22 +10,24 @@ import MenuListVertical from "./MenuListVertical";
 import MenuListHorizontal from "./MenuListHorizontal";
 import NavWrapper from "./NavWrapper";
 import Modal from "../Modal/Modal"
+import VisualsModal from "../VisualsModal/VisualsModal";
+import RealizationsModal from "../RealizationsModal/RealizationsModal";
 
 const Menu = () => {
-  const [isActive, setActive] = useState(false);
+  const {state, dispatch} = useContext(Context);
   return (
     <NavWrapper>
       <Modal/>
+      <VisualsModal/>
+      <RealizationsModal/>
       <MenuWrapper>
         <MenuLogo>mframe.</MenuLogo>
-        {/* <MenuSublogo>mobilne stoiska targowe</MenuSublogo> */}
         <MenuListHorizontal />
-
-        <HamburgerButton onClick={() => setActive(!isActive)}>
-          {isActive ? <HamburgerIcon active /> : <HamburgerIcon />}
+        <HamburgerButton onClick={() => dispatch("TOGGLE_MENU")}>
+          {state.menuActive ? <HamburgerIcon active /> : <HamburgerIcon />}
         </HamburgerButton>
       </MenuWrapper>
-      {isActive ? <MenuListVertical /> : null}
+      {state.menuActive ? <MenuListVertical /> : null}
     </NavWrapper>
   );
 };

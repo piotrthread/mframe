@@ -39,7 +39,7 @@ const Button = styled.button`
   letter-spacing: 0.5px;
   margin-top: 50px;
   cursor: pointer;
-  max-width: 200px;
+  max-width:200px;
   outline: none;
   color: ${(props) => (props.white ? "white" : "black")};
   transition: all 0.3s ease;
@@ -70,9 +70,9 @@ const AboutUs = () => {
           ulotki, zapoznaj się z asortymentem na stronie lub skontaktuj się z
           nami. Służymy swoją pomocą przy wyborze najlepszych rozwiązań!
         </Paragraph>
-        <Button>ADSYSTEM +</Button>
+        <Button>+ MOŻLIWOŚCI</Button>
       </VerticalContainer>
-      <Image />
+      <Image/>
     </AboutWrapper>
   );
 };

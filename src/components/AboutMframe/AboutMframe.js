@@ -70,7 +70,7 @@ const AboutMframe = () => {
           ulotki, zapoznaj się z asortymentem na stronie lub skontaktuj się z
           nami. Służymy swoją pomocą przy wyborze najlepszych rozwiązań!
         </Paragraph>
-        <Button>MOŻLIWOŚCI +</Button>
+        <Button>+ MOŻLIWOŚCI</Button>
       </VerticalContainer>
       <Image/>
     </AboutWrapper>

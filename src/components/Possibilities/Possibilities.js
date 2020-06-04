@@ -3,6 +3,7 @@ import Context from "../../context";
 import styled from "styled-components";
 
 import HeadingSmall from "../HeadingSmall/HeadingSmall";
+import {modals} from "../../data";
 
 const Wrapper = styled.div`
   display: flex;
@@ -28,7 +29,7 @@ const Feature = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 0.5em;
+  padding: 0 0.5em;
   margin-bottom: 50px;
   cursor: pointer;
   @media (max-width: 920px) {
@@ -40,48 +41,18 @@ const Feature = styled.div`
 `;
 
 const Possibilities = () => {
-  const {dispatch} = useContext(Context);
+  const { dispatch } = useContext(Context);
   return (
     <Wrapper>
-      <Feature onClick={()=>dispatch("SHOW_MODAL","akcesoria")}>
-        <Img src="./images/placeholder1x1.jpg" />
-        <HeadingSmall bold="Akcesoria" />
+      {Object.keys(modals).map((id,index)=>{
+        return(<Feature onClick={() => dispatch("SHOW_MODAL", id)}>
+        <Img src={modals[id].images[0]} />
+        <HeadingSmall bold={modals[id].name} thin={modals[id].subname?modals[id].subname:null} />
         <Paragraph>
-          oświetlenie LED, półka, panele na zawieszki, uchwyty TV, kantorek,
-          łuki
+      {modals[id].tags}
         </Paragraph>
-      </Feature>
-      <Feature onClick={()=>dispatch("SHOW_MODAL","wyposazenie")}>
-        <Img src="./images/placeholder1x1.jpg" />
-        <HeadingSmall bold="Wyposażenie" thin="stoiska" />
-        <Paragraph>
-          logotypy ze styroduru, logotypy podświetlane, uchwyty na katalogi,
-          ekspozycja produktów klienta, meble, lady
-        </Paragraph>
-      </Feature>
-      <Feature onClick={()=>dispatch("SHOW_MODAL","kasetony")}>
-        <Img src="./images/placeholder1x1.jpg" />
-        <HeadingSmall bold="Kasetony" thin="LED" />
-        <Paragraph>kaseton LMD, dynamic Lightbox, led skin</Paragraph>
-      </Feature>
-      <Feature onClick={()=>dispatch("SHOW_MODAL","podloga")}>
-        <Img src="./images/placeholder1x1.jpg" />
-        <HeadingSmall bold="Podłoga" thin="systemowa" />
-        <Paragraph>panele jednokolorowe, drukowane, wykładzina</Paragraph>
-      </Feature>
-      <Feature onClick={()=>dispatch("SHOW_MODAL","podwieszane")}>
-        <Img src="./images/placeholder1x1.jpg" />
-        <HeadingSmall bold="Systemy" thin="Podwieszane" />
-        <Paragraph>vario, kaseton, quadro</Paragraph>
-      </Feature>
-      <Feature onClick={()=>dispatch("SHOW_MODAL","uslugi")}>
-        <Img src="./images/placeholder1x1.jpg" />
-        <HeadingSmall bold="Usługi" />
-        <Paragraph>
-          logistyka, montaż, support, magazynowanie, demontaż, stoisko 'pod
-          klucz'
-        </Paragraph>
-      </Feature>
+      </Feature>);
+      })}
     </Wrapper>
   );
 };
