@@ -70,7 +70,7 @@ const AboutUs = () => {
           ulotki, zapoznaj się z asortymentem na stronie lub skontaktuj się z
           nami. Służymy swoją pomocą przy wyborze najlepszych rozwiązań!
         </Paragraph>
-        <Button>+ MOŻLIWOŚCI</Button>
+        <Button>+ ADSYSTEM</Button>
       </VerticalContainer>
       <Image/>
     </AboutWrapper>
