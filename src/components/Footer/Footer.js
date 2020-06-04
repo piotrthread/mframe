@@ -29,6 +29,7 @@ const SocialContainer = styled.div`
 `;
 const Icon = styled.img`
   width: 45px;
+  height:45px;
   margin-right: 20px;
 `;
 
