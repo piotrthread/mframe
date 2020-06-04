@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import Context from "../../context";
 import styled from "styled-components";
+import { Carousel } from "react-bootstrap";
 
 import Heading from "../Heading/Heading";
 
@@ -40,7 +41,7 @@ const ModalWrapper = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   padding: 50px;
-  padding-top: 0;
+  padding-top: 135px;
   overflow: scroll;
 `;
 const Smaller = styled.div`
@@ -48,6 +49,14 @@ const Smaller = styled.div`
   position: absolute;
   top: 0;
   left: 15px;
+`;
+
+const GalleryWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 const VisualsModal = () => {
@@ -60,6 +69,31 @@ const VisualsModal = () => {
           <Smaller>
             <Heading bold="Wizualizacje" thin="mframe" />
           </Smaller>
+          <GalleryWrapper>
+            <Carousel>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="http://via.placeholder.com/1920x1080"
+                  alt="slider-img"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="http://via.placeholder.com/1920x1080"
+                  alt="slider-img"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src="http://via.placeholder.com/1920x1080"
+                  alt="slider-img"
+                />
+              </Carousel.Item>
+            </Carousel>
+          </GalleryWrapper>
           <Button onClick={hideModal}>
             <Icon src="./images/close.png" />
           </Button>

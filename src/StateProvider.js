@@ -5,7 +5,7 @@ const initialState = {
   modalVisible: false,
   modalId: null,
   menuActive: false,
-  visualsModalVisible: false,
+  visualsModalVisible: true,
   realizationsModalVisible: false,
 };
 
