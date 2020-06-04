@@ -20,6 +20,10 @@ const MenuLogo = styled.span`
     transform: scale(5);
     top: 100px;
     right: -200px;
+    @media (min-width: 700px) {
+      right: 50px;
+      top: 200px;
+    }
   }
 `;
 const Paragraph = styled.p`

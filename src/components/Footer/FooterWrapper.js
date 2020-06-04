@@ -12,6 +12,12 @@ const FooterWrapper = styled.div`
   padding: 50px;
   position: relative;
   overflow: hidden;
+  @media (min-width: 992px) {
+    padding-left: 130px;
+  }
+  @media (min-width: 1200px) {
+    padding-left: 230px;
+  }
 `;
 
 export default FooterWrapper;
