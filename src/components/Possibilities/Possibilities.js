@@ -45,7 +45,7 @@ const Possibilities = () => {
   return (
     <Wrapper>
       {Object.keys(modals).map((id,index)=>{
-        return(<Feature onClick={() => dispatch("SHOW_MODAL", id)}>
+        return(<Feature onClick={() => dispatch("SHOW_MODAL", id)} key={id}>
         <Img src={modals[id].images[0]} />
         <HeadingSmall bold={modals[id].name} thin={modals[id].subname?modals[id].subname:null} />
         <Paragraph>

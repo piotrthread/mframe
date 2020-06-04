@@ -44,6 +44,13 @@ const ModalWrapper = styled.div`
   overflow: scroll;
 `;
 
+const Smaller = styled.div`
+  transform: scale(0.8);
+  position: absolute;
+  top: 0;
+  left: 15px;
+`;
+
 const RealizationsModal = () => {
   const { state, dispatch } = useContext(Context);
   const hideModal = () => dispatch("HIDE_REALIZATIONS_MODAL");
@@ -51,10 +58,9 @@ const RealizationsModal = () => {
     <>
       {state.realizationsModalVisible ? (
         <ModalWrapper>
-          <Heading
-            bold="Realizacje"
-            thin="mframe"
-          />
+          <Smaller>
+            <Heading bold="Realizacje" thin="mframe" />
+          </Smaller>
           <Button onClick={hideModal}>
             <Icon src="./images/close.png" />
           </Button>

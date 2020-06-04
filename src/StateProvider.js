@@ -5,8 +5,8 @@ const initialState = {
   modalVisible: false,
   modalId: null,
   menuActive: false,
-  visualsModalVisible:false,
-  realizationsModalVisible: false
+  visualsModalVisible: false,
+  realizationsModalVisible: false,
 };
 
 const reducer = (state, action) => {
@@ -18,13 +18,13 @@ const reducer = (state, action) => {
     case "TOGGLE_MENU":
       return { ...state, menuActive: !state.menuActive };
     case "SHOW_VISUALS_MODAL":
-        return { ...state, visualsModalVisible: true };
+      return { ...state, visualsModalVisible: true };
     case "HIDE_VISUALS_MODAL":
-        return { ...state, visualsModalVisible: false };  
+      return { ...state, visualsModalVisible: false };
     case "SHOW_REALIZATIONS_MODAL":
-          return { ...state, realizationsModalVisible: true };
+      return { ...state, realizationsModalVisible: true };
     case "HIDE_REALIZATIONS_MODAL":
-          return { ...state, realizationsModalVisible: false };
+      return { ...state, realizationsModalVisible: false };
     default:
       return state;
   }
