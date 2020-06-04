@@ -12,14 +12,14 @@ const MenuLogo = styled.span`
 `;
 const Paragraph = styled.p`
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   color: white;
   margin-top: 140px;
 `;
 const Adress = styled.p`
   color: white;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 15px;
   margin-top: 25px;
 `;
 const SocialContainer = styled.div`
@@ -28,8 +28,8 @@ const SocialContainer = styled.div`
   margin-top:25px;
 `;
 const Icon = styled.img`
-  width: 45px;
-  height:45px;
+  width: 40px;
+  height:40px;
   margin-right: 20px;
 `;
 
