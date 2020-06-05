@@ -49,16 +49,12 @@ const App = () => {
         <Heading bold="O" thin="systemie" />
       </Container>
       <AboutMframe />
-      <Container></Container>
       <Container>
         <Heading bold="Wizualizacje" thin="mframe" />
         <Visuals />
         <Heading bold="Możliwości" thin="mframe" />
         <Animage />
         <Possibilities />
-      </Container>
-
-      <Container>
         <Heading bold="Realizacje" thin="mframe" />
         <Realizations />
         <Heading bold="O" thin="nas" />
