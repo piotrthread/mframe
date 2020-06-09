@@ -48,9 +48,9 @@ const App = () => {
       <Container>
         <Heading bold="O" thin="systemie" />
       </Container>
-      <AboutMframe />
+      <AboutMframe/>
       <Container>
-        <Heading bold="Wizualizacje" thin="mframe" />
+        <Heading bold="Wizualizacje" thin="mframe"/>
         <Visuals />
         <Heading bold="Możliwości" thin="mframe" />
         <Animage />

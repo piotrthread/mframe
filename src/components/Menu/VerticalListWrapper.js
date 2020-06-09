@@ -13,16 +13,7 @@ const VerticalListWrapper = styled.ul`
   padding-right: 25px;
   position: absolute;
   right: 0;
-  @keyframes slide {
-    0% {
-      right: 100vw;
-    }
-    100% {
-      right: 0;
-    }
-  }
-
-  animation: slide 0.4s ease;
+  transition: right .6s ease;
 
   @media (min-width: 1075px) {
     display: none;

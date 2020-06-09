@@ -28,6 +28,10 @@ const ImageMobile = styled.div`
   }
 `;
 
+const Strong = styled.span`
+  font-weight: 500;
+`;
+
 const Button = styled.button`
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -39,7 +43,7 @@ const Button = styled.button`
   letter-spacing: 0.5px;
   margin-top: 50px;
   cursor: pointer;
-  max-width:200px;
+  max-width: 200px;
   outline: none;
   color: ${(props) => (props.white ? "white" : "black")};
   transition: all 0.3s ease;
@@ -54,25 +58,41 @@ const AboutMframe = () => {
       <ImageMobile />
       <VerticalContainer>
         <Paragraph>
-          Adsystem to jakość i wieloletnie doświadczenie, którym chętnie
-          dzielimy się ze stale rosnącą rzeszą klientów. Materiały reklamowe i
-          rozwiązania dla marketingu są naszą największą pasją. Wszystkie
-          oferowane systemy wystawiennicze cechuje innowacyjność i skrupulatne
-          zaprojektowanie spełniające najśmielsze wizje i oczekiwania. W naszej
-          szerokiej i nowoczesnej ofercie znajdziecie też sprawdzone standy
-          reklamowe, rollupy i stojaki.
+          <Strong>Jeden system, wiele zastosowań, pełnia swobody.</Strong>
+          <br />
+          <br />
+          Mframe to nowoczesna i innowacyjna <Strong>zabudowa targowa</Strong>. Jest <Strong>modułowa</Strong> i w
+          pełni <Strong>mobilna</Strong>. Nasz system zapewnia Ci to, czego najbardziej
+          potrzebujesz – wygodę i wolność użytkowania!
+          <br />
+          <br />
+          Dlaczego właśnie Mframe? To proste! To wygodny w montażu, całkowicie
+          modyfikowalny system wielokrotnego użytku. Konstrukcja jest oparta na
+          prostym stelażu i wymiennych modułach. Bez trudu dopasujesz swoje
+          stoisko do każdej przestrzeni.
         </Paragraph>
         <Paragraph>
-          Marka Adsystem to także kompleksowo wykonane stoiska targowe. Ich cena
-          jest zawsze doskonale skorelowana z jakością i materiałem użytym w
-          produkcji. Jeżeli więc potrzebna ci solidna ścianka reklamowa,
-          efektowny roll up, wszechstronny stand czy funkcjonalny stojak na
-          ulotki, zapoznaj się z asortymentem na stronie lub skontaktuj się z
-          nami. Służymy swoją pomocą przy wyborze najlepszych rozwiązań!
+          Elementy konstrukcji w systemie Mframe zostały wykonane z aluminium,
+          który nadaje im niezbędnej wytrzymałości, a jednocześnie lekkości.
+          Wypełnienie modułów to nadruk na płycie PCV lub materiale
+          poliestrowym. Taka <Strong>zabudowa stoiska targowego</Strong> nie tylko będzie
+          solidna, ale też bardzo trwała. Bez problemu użyjesz tych samych
+          elementów do budowy swojego standu na kolejnych imprezach i eventach.
+          <br />
+          <br />
+          Pozostaje jeszcze wygoda i mobilność. Cały system Mframe możesz złożyć
+          do pojedynczych elementów. To całkowicie upraszcza transport i
+          przechowywanie. A gdy zajdzie potrzeba, bez trudu złożysz swój stand w
+          dowolny sposób i bez narzędzi. Ogranicza Cię tylko wyobraźnia!
+          <br />
+          <br />
+          Uniwersalne elementy, wygodny montaż, solidna konstrukcja i szeroki
+          zakres modyfikacji. Czy potrzebujesz czegoś jeszcze? Nie, bo to
+          wszystkie daje Ci Mframe!
         </Paragraph>
         <Button>+ MOŻLIWOŚCI</Button>
       </VerticalContainer>
-      <Image/>
+      <Image />
     </AboutWrapper>
   );
 };

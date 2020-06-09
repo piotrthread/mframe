@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+import Context from "../../context";
 
 import VerticalListWrapper from "./VerticalListWrapper";
 import VerticalListItem from "./VerticalListItem";
 
 const MenuListVertical = () => {
+  const { state } = useContext(Context);
   return (
-    <VerticalListWrapper>
+    <VerticalListWrapper
+      style={{
+        right: state.menuActive ? 0 : "100vw",
+      }}
+    >
       <VerticalListItem>o nas</VerticalListItem>
       <VerticalListItem>o systemie</VerticalListItem>
       <VerticalListItem>wizualizacje</VerticalListItem>

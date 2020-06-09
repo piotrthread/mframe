@@ -19,6 +19,7 @@ const Container = styled.div`
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  transition: all 1s ease;
   @media (min-width: 1250px) {
     height: 100vh;
   }
@@ -28,7 +29,7 @@ const Container = styled.div`
   @media (min-width: 1600px) {
     height: 800px;
   }
-  
+
   &::before {
     display: block;
     content: "";
@@ -63,7 +64,7 @@ const Visuals = () => {
   const { dispatch } = useContext(Context);
   const pics = Array(22).fill(null);
   return (
-    <Container onClick={()=>dispatch("SHOW_VISUALS_MODAL")}>
+    <Container onClick={() => dispatch("SHOW_VISUALS_MODAL")}>
       <MasonryWrapper>
         {pics.map((element, index) => {
           return (
