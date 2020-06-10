@@ -45,6 +45,21 @@ const ModalWrapper = styled.div`
   padding-top: 0;
   overflow: scroll;
 `;
+const SectionWrapper = styled.div`
+  display: flex;
+  height: 70vh;
+  justify-content: flex-start;
+  width: 100%;
+`;
+const Img = styled.img`
+  height: 100%;
+`;
+const Paragraph = styled.p`
+  padding: 50px;
+  padding-right: 0;
+  text-indent: 50px;
+  text-align: justify;
+`;
 
 const Modal = () => {
   const { state, dispatch } = useContext(Context);
@@ -58,10 +73,12 @@ const Modal = () => {
             bold={modal.name}
             thin={modal.subname ? modal.subname : null}
           />
-          {modal.images.map((img, index) => (
-            <img src={img} alt={index} />
-          ))}
-          <p>{modal.info}</p>
+          <SectionWrapper>
+            {modal.images.map((img, index) => (
+              <Img src={img} alt={index} />
+            ))}
+            <Paragraph>{modal.info}</Paragraph>
+          </SectionWrapper>
           <Button onClick={hideModal}>
             <Icon src="./images/close.png" />
           </Button>
