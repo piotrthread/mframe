@@ -10,7 +10,7 @@ const MenuLogo = styled.span`
   top: -40px;
   right: 25px;
   &::before {
-    content: "a.";
+    content: "m.";
     display: block;
     position: absolute;
     color: white;
@@ -52,7 +52,7 @@ const Icon = styled.img`
 const Footer = () => {
   return (
     <FooterWrapper>
-      <MenuLogo>a.</MenuLogo>
+      <MenuLogo>m.</MenuLogo>
       <Paragraph>Adsystem Sp. z o.o.</Paragraph>
       <Adress>
         Bielany Wrocławskie,
