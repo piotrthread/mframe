@@ -47,18 +47,26 @@ const ModalWrapper = styled.div`
 `;
 const SectionWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   height: 70vh;
   justify-content: flex-start;
   width: 100%;
+  @media (min-width: 1075px) {
+    flex-direction: row;
+  }
 `;
 const Img = styled.img`
+  width: auto;
   height: 100%;
 `;
 const Paragraph = styled.p`
-  padding: 50px;
-  padding-right: 0;
+  padding-top: 50px;
   text-indent: 50px;
   text-align: justify;
+  @media (min-width: 1075px) {
+    padding: 50px;
+    padding-right: 0;
+  }
 `;
 
 const Modal = () => {
