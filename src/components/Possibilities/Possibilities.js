@@ -17,6 +17,7 @@ const Paragraph = styled.p`
   font-weight: 300;
   text-align: justify;
   font-size: 15px;
+  width:100%;
 `;
 
 const Img = styled.img`

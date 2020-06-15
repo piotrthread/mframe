@@ -25,6 +25,7 @@ const Bullet = styled.div`
   width: 71px;
   height: 7px;
   margin-right: 16px;
+  margin-bottom:10px;
 `;
 
 const Heading = ({ bold, thin }) => (
