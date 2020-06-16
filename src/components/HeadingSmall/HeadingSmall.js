@@ -7,6 +7,7 @@ const HeadingWrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
   margin: 25px 0;
+  margin-bottom:6px;
   align-self: flex-start;
 `;
 
@@ -26,7 +27,7 @@ const Bullet = styled.div`
   width: 25px;
   height: 3px;
   margin-right: 8px;
-  margin-bottom:8px;
+  margin-bottom: 8px;
 `;
 
 const HeadingSmall = ({ bold, thin }) => (

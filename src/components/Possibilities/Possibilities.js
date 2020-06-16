@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import Context from "../../context";
+import React from "react";
+import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 
 import HeadingSmall from "../HeadingSmall/HeadingSmall";
-import {modals} from "../../data";
+import { modals } from "../../data";
 
 const Wrapper = styled.div`
   display: flex;
@@ -17,7 +17,7 @@ const Paragraph = styled.p`
   font-weight: 300;
   text-align: justify;
   font-size: 15px;
-  width:100%;
+  width: 100%;
 `;
 
 const Img = styled.img`
@@ -42,17 +42,20 @@ const Feature = styled.div`
 `;
 
 const Possibilities = () => {
-  const { dispatch } = useContext(Context);
+  let history = useHistory();
   return (
     <Wrapper>
-      {Object.keys(modals).map((id,index)=>{
-        return(<Feature onClick={() => dispatch("SHOW_MODAL", id)} key={id}>
-        <Img src={modals[id].images[0]} />
-        <HeadingSmall bold={modals[id].name} thin={modals[id].subname?modals[id].subname:null} />
-        <Paragraph>
-      {modals[id].tags}
-        </Paragraph>
-      </Feature>);
+      {Object.keys(modals).map((id, index) => {
+        return (
+          <Feature onClick={()=>history.push(`/${id}`)} key={id}>
+            <Img src={modals[id].images[0]} />
+            <HeadingSmall
+              bold={modals[id].name}
+              thin={modals[id].subname ? modals[id].subname : null}
+            />
+            <Paragraph>{modals[id].tags}</Paragraph>
+          </Feature>
+        );
       })}
     </Wrapper>
   );

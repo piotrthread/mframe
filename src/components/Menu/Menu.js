@@ -16,7 +16,6 @@ const Menu = () => {
   const { state, dispatch } = useContext(Context);
   return (
     <NavWrapper>
-      <Modal />
       <VisualsModal />
       <RealizationsModal />
       <MenuWrapper>

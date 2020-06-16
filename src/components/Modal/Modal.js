@@ -1,11 +1,10 @@
-import React, { useContext } from "react";
-import Context from "../../context";
+import React from "react";
+import {useHistory} from "react-router-dom";
 import styled from "styled-components";
 
 import HeadingModal from "../HeadingModal/HeadingModal";
 import HeadingMedium from "../HeadingMedium/HeadingMedium";
 
-import { modals } from "../../data";
 
 const Button = styled.button`
   -webkit-appearance: none;
@@ -82,33 +81,29 @@ const Paragraph = styled.p`
   }
 `;
 
-const Modal = () => {
-  const { state, dispatch } = useContext(Context);
-  const hideModal = () => dispatch("HIDE_MODAL");
-  const modal = modals[state.modalId];
+const Modal = (props) => {
+  let history = useHistory();
   return (
     <>
-      {state.modalVisible ? (
         <ModalWrapper>
           <HeadingModal
-            bold={modal.name}
-            thin={modal.subname ? modal.subname : null}
+            bold={props.modal.name}
+            thin={props.modal.subname ? props.modal.subname : null}
           />
           <HeadingMedium
-            bold={modal.name}
-            thin={modal.subname ? modal.subname : null}
+            bold={props.modal.name}
+            thin={props.modal.subname ? props.modal.subname : null}
           />
           <SectionWrapper>
-            {modal.images.map((img, index) => (
+            {props.modal.images.map((img, index) => (
               <Img src={img} alt={index} />
             ))}
-            <Paragraph>{modal.info}</Paragraph>
+            <Paragraph>{props.modal.info}</Paragraph>
           </SectionWrapper>
-          <Button onClick={hideModal}>
+          <Button onClick={(()=>history.goBack())}>
             <Icon src="./images/close.png" />
           </Button>
         </ModalWrapper>
-      ) : null}
     </>
   );
 };
