@@ -2,8 +2,8 @@ import React, { useReducer} from "react";
 import Context from "./context";
 
 const initialState = {
-  modalVisible: false,
-  modalId: null,
+  modalVisible: true,
+  modalId: "podwieszane",
   menuActive: false,
   visualsModalVisible: false,
   realizationsModalVisible: false,

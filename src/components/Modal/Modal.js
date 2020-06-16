@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import Context from "../../context";
 import styled from "styled-components";
 
-import Heading from "../Heading/Heading";
+import HeadingModal from "../HeadingModal/HeadingModal";
+import HeadingMedium from "../HeadingMedium/HeadingMedium";
 
 import { modals } from "../../data";
 
@@ -13,20 +14,23 @@ const Button = styled.button`
   cursor: pointer;
   outline: none;
   border: 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   margin: 25px;
   color: ${(props) => (props.white ? "white" : "black")};
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
   &:hover {
     opacity: 0.6;
+  }
+  @media (min-width: 570px) {
+    margin: 50px;
   }
 `;
 
 const Icon = styled.img`
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
 `;
 
 const ModalWrapper = styled.div`
@@ -51,21 +55,29 @@ const SectionWrapper = styled.div`
   height: 70vh;
   justify-content: flex-start;
   width: 100%;
-  @media (min-width: 1075px) {
+  @media (min-width: 1020px) {
     flex-direction: row;
   }
 `;
 const Img = styled.img`
-  width: auto;
-  height: 100%;
+  width: 100%;
+  @media (min-width: 825px) {
+    width: 500px;
+    height: 500px;
+  }
 `;
 const Paragraph = styled.p`
   padding-top: 50px;
   text-indent: 50px;
   text-align: justify;
-  @media (min-width: 1075px) {
+  @media (min-width: 825px) {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+  @media (min-width: 1020px) {
     padding: 50px;
     padding-right: 0;
+    padding-top: 0;
   }
 `;
 
@@ -77,7 +89,11 @@ const Modal = () => {
     <>
       {state.modalVisible ? (
         <ModalWrapper>
-          <Heading
+          <HeadingModal
+            bold={modal.name}
+            thin={modal.subname ? modal.subname : null}
+          />
+          <HeadingMedium
             bold={modal.name}
             thin={modal.subname ? modal.subname : null}
           />

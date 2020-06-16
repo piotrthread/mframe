@@ -6,30 +6,32 @@ const HeadingWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  margin: 25px 0;
-  align-self: flex-start;
+  margin: 50px 0;
+  @media (max-width:570px){
+    display:none;
+  }
 `;
 
 const HeadingBold = styled.h1`
   display: inline-block;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 700;
 `;
 const HeadingThin = styled.h1`
   display: inline-block;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 300;
   margin-left: 10px;
 `;
 const Bullet = styled.div`
   background-color: black;
-  width: 25px;
-  height: 3px;
-  margin-right: 8px;
-  margin-bottom:8px;
+  width: 71px;
+  height: 7px;
+  margin-right: 16px;
+  margin-bottom: 10px;
 `;
 
-const HeadingSmall = ({ bold, thin }) => (
+const HeadingModal = ({ bold, thin }) => (
   <HeadingWrapper>
     <Bullet />
     {bold ? <HeadingBold>{bold}</HeadingBold> : null}
@@ -37,4 +39,4 @@ const HeadingSmall = ({ bold, thin }) => (
   </HeadingWrapper>
 );
 
-export default HeadingSmall;
+export default HeadingModal;
