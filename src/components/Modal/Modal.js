@@ -70,6 +70,7 @@ const Paragraph = styled.p`
   padding-top: 50px;
   text-indent: 50px;
   text-align: justify;
+  padding-bottom: 100px;
   @media (min-width: 825px) {
     padding-top: 50px;
     padding-bottom: 25px;
