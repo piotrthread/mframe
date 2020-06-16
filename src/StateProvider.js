@@ -11,10 +11,6 @@ const initialState = {
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case "SHOW_MODAL":
-      return { ...state, modalId: action.payload, modalVisible: true };
-    case "HIDE_MODAL":
-      return { ...state, modalVisible: false };
     case "TOGGLE_MENU":
       return { ...state, menuActive: !state.menuActive };
     case "SHOW_VISUALS_MODAL":

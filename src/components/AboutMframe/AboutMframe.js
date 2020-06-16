@@ -65,7 +65,7 @@ const AboutMframe = () => {
           pełni <Strong>mobilna</Strong>. Nasz system zapewnia Ci to, czego najbardziej
           potrzebujesz – wygodę i wolność użytkowania!
           <br />
-          <br />
+          
           Dlaczego właśnie Mframe? To proste! To wygodny w montażu, całkowicie
           modyfikowalny system wielokrotnego użytku. Konstrukcja jest oparta na
           prostym stelażu i wymiennych modułach. Bez trudu dopasujesz swoje

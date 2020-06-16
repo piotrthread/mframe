@@ -22,6 +22,12 @@ const Paragraph = styled.p`
 
 const Img = styled.img`
   width: 100%;
+  overflow: hidden;
+  filter:brightness(1);
+  transition: filter 0.3s ease;
+  &:hover {
+    filter:brightness(.85);
+  }
 `;
 
 const Feature = styled.div`
@@ -47,7 +53,7 @@ const Possibilities = () => {
     <Wrapper>
       {Object.keys(modals).map((id, index) => {
         return (
-          <Feature onClick={()=>history.push(`/${id}`)} key={id}>
+          <Feature onClick={() => history.push(`/${id}`)} key={id}>
             <Img src={modals[id].images[0]} />
             <HeadingSmall
               bold={modals[id].name}

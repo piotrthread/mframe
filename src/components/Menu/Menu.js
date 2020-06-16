@@ -8,7 +8,6 @@ import HamburgerButton from "./HamburgerButton";
 import MenuListVertical from "./MenuListVertical";
 import MenuListHorizontal from "./MenuListHorizontal";
 import NavWrapper from "./NavWrapper";
-import Modal from "../Modal/Modal";
 import VisualsModal from "../VisualsModal/VisualsModal";
 import RealizationsModal from "../RealizationsModal/RealizationsModal";
 

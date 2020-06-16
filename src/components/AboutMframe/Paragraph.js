@@ -3,11 +3,9 @@ import styled from "styled-components";
 const Paragraph = styled.p`
   font-weight: 300;
   text-align: justify;
-  text-indent: 50px;
   padding-top: 25px;
   @media (min-width: 1050px) {
     padding-left: 130px;
-    padding-top: 50px;
   }
   @media (min-width: 1200px) {
     padding-left: 230px;
