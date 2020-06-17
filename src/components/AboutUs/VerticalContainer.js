@@ -10,6 +10,7 @@ const VerticalContainer = styled.div`
   @media (min-width: 1050px) {
     padding-right: 50px;
     padding-bottom: 50px;
+    padding-top:25px;
     width: 50%;
   }
 `;

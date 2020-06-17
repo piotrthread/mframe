@@ -71,6 +71,12 @@ const Image = styled.img`
   display: inline-block;
   margin: 0 0 0.3em;
   width: 100%;
+  z-index: 9999;
+  filter: saturate(0) contrast(0.7) brightness(1.2);
+  transition: filter 0.2s ease;
+  &:hover {
+    filter: saturate(1) contrast(1) brightness(1);
+  }
 `;
 
 const Realizations = () => {

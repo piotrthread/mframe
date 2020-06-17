@@ -16,7 +16,7 @@ const AboutWrapper = styled.div`
   }
   @media (min-width: 1050px) {
     flex-direction: row;
-    min-height: 600px;
+    min-height: 450px;
     padding: 0;
   }
 `;
