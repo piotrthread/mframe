@@ -17,7 +17,7 @@ const App = () => {
       <Router>
         {Object.keys(modals).map((id, index) => {
           return (
-            <Route path={`/${id}`}>
+            <Route path={`/${id}`} key={index}>
               <Modal modal={modals[id]} />
             </Route>
           );
