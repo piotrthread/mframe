@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import GlobalStyle from "./GlobalStyle";
 import styled from "styled-components";
@@ -36,13 +36,13 @@ const App = () => {
     <StateProvider>
       <GlobalStyle />
       <Router>
-      {Object.keys(modals).map((id, index) => {
-        return (
-          <Route path={`/${id}`}>
-        <Modal modal={modals[id]}/>
-        </Route>
-        );
-      })}
+        {Object.keys(modals).map((id, index) => {
+          return (
+            <Route path={`/${id}`}>
+              <Modal modal={modals[id]} />
+            </Route>
+          );
+        })}
         <Route exact path="/">
           <Menu />
           <Spacer />
