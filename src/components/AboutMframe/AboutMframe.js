@@ -54,18 +54,18 @@ const Button = styled.button`
 
 const AboutMframe = () => {
   return (
-    <AboutWrapper>
+    <AboutWrapper id="osystemie">
       <ImageMobile />
       <VerticalContainer>
         <Paragraph>
           <Strong>Jeden system, wiele zastosowań, pełnia swobody.</Strong>
           <br />
           <br />
-          Mframe to nowoczesna i innowacyjna <Strong>zabudowa targowa</Strong>. Jest <Strong>modułowa</Strong> i w
-          pełni <Strong>mobilna</Strong>. Nasz system zapewnia Ci to, czego najbardziej
-          potrzebujesz – wygodę i wolność użytkowania!
+          Mframe to nowoczesna i innowacyjna <Strong>zabudowa targowa</Strong>.
+          Jest <Strong>modułowa</Strong> i w pełni <Strong>mobilna</Strong>.
+          Nasz system zapewnia Ci to, czego najbardziej potrzebujesz – wygodę i
+          wolność użytkowania!
           <br />
-          
           Dlaczego właśnie Mframe? To proste! To wygodny w montażu, całkowicie
           modyfikowalny system wielokrotnego użytku. Konstrukcja jest oparta na
           prostym stelażu i wymiennych modułach. Bez trudu dopasujesz swoje
@@ -75,9 +75,10 @@ const AboutMframe = () => {
           Elementy konstrukcji w systemie Mframe zostały wykonane z aluminium,
           który nadaje im niezbędnej wytrzymałości, a jednocześnie lekkości.
           Wypełnienie modułów to nadruk na płycie PCV lub materiale
-          poliestrowym. Taka <Strong>zabudowa stoiska targowego</Strong> nie tylko będzie
-          solidna, ale też bardzo trwała. Bez problemu użyjesz tych samych
-          elementów do budowy swojego standu na kolejnych imprezach i eventach.
+          poliestrowym. Taka <Strong>zabudowa stoiska targowego</Strong> nie
+          tylko będzie solidna, ale też bardzo trwała. Bez problemu użyjesz tych
+          samych elementów do budowy swojego standu na kolejnych imprezach i
+          eventach.
           <br />
           <br />
           Pozostaje jeszcze wygoda i mobilność. Cały system Mframe możesz złożyć

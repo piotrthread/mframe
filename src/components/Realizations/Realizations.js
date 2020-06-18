@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
+import { useHistory } from "react-router-dom";
 import styled from "styled-components";
-import Context from "../../context";
 
 const MasonryWrapper = styled.div`
   column-count: 2;
@@ -28,21 +28,7 @@ const Container = styled.div`
   @media (min-width: 1600px) {
     height: 800px;
   }
-  /* &::before {
-    display: block;
-    content: "";
-    position: absolute;
-    z-index: 5;
-    width: 100%;
-    height: 150px;
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 1) 40%,
-      rgba(255, 255, 255, 0.7) 60%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    bottom: 0;
-  } */
+
   &::before {
     display: block;
     content: "";
@@ -80,11 +66,11 @@ const Image = styled.img`
 `;
 
 const Realizations = () => {
+  let history = useHistory();
   const pics = Array(22).fill(null);
-  const { dispatch } = useContext(Context);
   return (
-    <Container onClick={() => dispatch("SHOW_REALIZATIONS_MODAL")}>
-      <MasonryWrapper>
+    <Container onClick={() => history.push("/realizacje")}>
+      <MasonryWrapper id="realizacje">
         {pics.map((element, index) => {
           return (
             <Image

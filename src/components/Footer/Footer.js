@@ -19,7 +19,7 @@ const MenuLogo = styled.span`
     opacity: 0.08;
     transform: scale(5);
     top: 100px;
-    right: -200px;
+    left: -400px;
     @media (min-width: 700px) {
       right: 50px;
       top: 200px;
@@ -48,10 +48,34 @@ const Icon = styled.img`
   height: 40px;
   margin-right: 20px;
 `;
+const SocialLink = styled.a`
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  &:hover {
+    opacity: 0.6;
+  }
+`;
+const ContactLink = styled.a`
+  color: white;
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+  }
+  &:active {
+    text-decoration: none;
+  }
+`;
 
 const Footer = () => {
   return (
-    <FooterWrapper>
+    <FooterWrapper id="kontakt">
       <MenuLogo>m.</MenuLogo>
       <Paragraph>Adsystem Sp. z o.o.</Paragraph>
       <Adress>
@@ -62,21 +86,44 @@ const Footer = () => {
         55-040 Kobierzyce
         <br />
         <br />
-        tel. +48 672 672 000
+        <ContactLink href="tel:+48-672-672-000">
+          tel. +48 672 672 000
+        </ContactLink>
         <br />
         <br />
         Dział handlowy: <br />
-        sales@adsystem.pl
+        <ContactLink href="mailto:sales@adsystem.pl">
+          sales@adsystem.pl
+        </ContactLink>
         <br />
         <br />
         Biuro: <br />
-        office@adsystem.pl
+        <ContactLink href="mailto:office@adsystem.pl">
+          office@adsystem.pl
+        </ContactLink>
       </Adress>
       <SocialContainer>
-        <Icon src="./images/facebook.png" />
-        <Icon src="./images/youtube.png" />
-        <Icon src="./images/linkedin.png" />
-        <Icon src="./images/instagram.png" />
+        <SocialLink
+          href="https://www.facebook.com/AdsystemPOS/"
+          target="_blank"
+        >
+          <Icon src="./images/facebook.png" />
+        </SocialLink>
+        <SocialLink
+          href="https://www.youtube.com/channel/UCwaSpQ9akHeEGIjnPoUhiLw"
+          target="_blank"
+        >
+          <Icon src="./images/youtube.png" />
+        </SocialLink>
+        <SocialLink
+          href="https://www.linkedin.com/company/adsystem/"
+          target="_blank"
+        >
+          <Icon src="./images/linkedin.png" />
+        </SocialLink>
+        {/* <SocialLink href="#" target="_blank">
+          <Icon src="./images/instagram.png" />
+        </SocialLink> */}
       </SocialContainer>
     </FooterWrapper>
   );

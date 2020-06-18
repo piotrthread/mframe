@@ -8,15 +8,12 @@ import HamburgerButton from "./HamburgerButton";
 import MenuListVertical from "./MenuListVertical";
 import MenuListHorizontal from "./MenuListHorizontal";
 import NavWrapper from "./NavWrapper";
-import VisualsModal from "../VisualsModal/VisualsModal";
-import RealizationsModal from "../RealizationsModal/RealizationsModal";
+
 
 const Menu = () => {
   const { state, dispatch } = useContext(Context);
   return (
     <NavWrapper>
-      <VisualsModal />
-      <RealizationsModal />
       <MenuWrapper>
         <MenuLogo>mframe.</MenuLogo>
         <MenuListHorizontal />

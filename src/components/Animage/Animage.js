@@ -17,7 +17,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   width: 100%;
-  display: none;
+  display: flex;
   justify-content: center;
   position: relative;
   height: 40vw;
@@ -53,6 +53,7 @@ const Animage = () => {
         onMouseOver={showImage}
         onMouseOut={hideImage}
         onClick={toggleImage}
+        id="mozliwosci"
       >
         <Image src="./images/grafa.jpg" />
         <Image

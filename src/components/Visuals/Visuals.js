@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 import styled from "styled-components";
-import Context from "../../context";
+import { useHistory } from "react-router-dom";
 
 const MasonryWrapper = styled.div`
   column-count: 2;
@@ -67,11 +67,11 @@ const Image = styled.img`
 `;
 
 const Visuals = () => {
-  const { dispatch } = useContext(Context);
+  let history = useHistory();
   const pics = Array(22).fill(null);
   return (
-    <Container onClick={() => dispatch("SHOW_VISUALS_MODAL")}>
-      <MasonryWrapper>
+    <Container onClick={() => history.push("/wizualizacje")}>
+      <MasonryWrapper  id="wizualizacje">
         {pics.map((element, index) => {
           return (
             <Image

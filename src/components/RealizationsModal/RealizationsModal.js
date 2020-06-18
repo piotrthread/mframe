@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
-import Context from "../../context";
+import React from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router-dom";
 
 import Heading from "../Heading/Heading";
 import { Carousel } from "react-bootstrap";
@@ -60,45 +60,42 @@ const GalleryWrapper = styled.div`
 `;
 
 const RealizationsModal = () => {
-  const { state, dispatch } = useContext(Context);
-  const hideModal = () => dispatch("HIDE_REALIZATIONS_MODAL");
+  let history = useHistory();
   return (
     <>
-      {state.realizationsModalVisible ? (
-        <ModalWrapper>
-          <Smaller>
-            <Heading bold="Realizacje" thin="mframe" />
-          </Smaller>
-          <GalleryWrapper>
-            <Carousel>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src="http://via.placeholder.com/1920x1080"
-                  alt="slider-img"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src="http://via.placeholder.com/1920x1080"
-                  alt="slider-img"
-                />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src="http://via.placeholder.com/1920x1080"
-                  alt="slider-img"
-                />
-              </Carousel.Item>
-            </Carousel>
-          </GalleryWrapper>
-          <Button onClick={hideModal}>
-            <Icon src="./images/close.png" />
-          </Button>
-        </ModalWrapper>
-      ) : null}
+      <ModalWrapper>
+        <Smaller>
+          <Heading bold="Realizacje" thin="mframe" />
+        </Smaller>
+        <GalleryWrapper>
+          <Carousel>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="http://via.placeholder.com/1920x1080"
+                alt="slider-img"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="http://via.placeholder.com/1920x1080"
+                alt="slider-img"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="http://via.placeholder.com/1920x1080"
+                alt="slider-img"
+              />
+            </Carousel.Item>
+          </Carousel>
+        </GalleryWrapper>
+        <Button onClick={() => history.goBack()}>
+          <Icon src="./images/close.png" />
+        </Button>
+      </ModalWrapper>
     </>
   );
 };
