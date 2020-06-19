@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 
@@ -61,6 +61,9 @@ const GalleryWrapper = styled.div`
 
 const RealizationsModal = () => {
   let history = useHistory();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <ModalWrapper>

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import {useHistory} from "react-router-dom";
 import styled from "styled-components";
 
@@ -83,6 +83,9 @@ const Paragraph = styled.p`
 
 const Modal = (props) => {
   let history = useHistory();
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[]);
   return (
     <>
         <ModalWrapper>
