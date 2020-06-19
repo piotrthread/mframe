@@ -103,7 +103,7 @@ const Modal = (props) => {
           <Paragraph>{props.modal.info}</Paragraph>
         </SectionWrapper>
         <Button>
-          <Icon onClick={() => history.goBack()} src="./images/close.png" />
+          <Icon onClick={() => history.push("/")} src="./images/close.png" />
         </Button>
       </ModalWrapper>
     </>

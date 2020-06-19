@@ -95,7 +95,7 @@ const RealizationsModal = () => {
             </Carousel.Item>
           </Carousel>
         </GalleryWrapper>
-        <Button onClick={() => history.goBack()}>
+        <Button onClick={() => history.push("/")}>
           <Icon src="./images/close.png" />
         </Button>
       </ModalWrapper>
