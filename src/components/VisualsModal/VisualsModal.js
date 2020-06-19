@@ -63,12 +63,7 @@ const GalleryWrapper = styled.div`
 const VisualsModal = () => {
   let history = useHistory();
   useEffect(()=>{
-    $("html,body").animate(
-      {
-        scrollTop: $("html,body").offset().top,
-      },
-      "slow"
-    );
+    window.scrollTo(0, 0);
   },[]);
   return (
     <>
