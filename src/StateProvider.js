@@ -2,25 +2,13 @@ import React, { useReducer} from "react";
 import Context from "./context";
 
 const initialState = {
-  modalVisible: false,
-  modalId: null,
   menuActive: false,
-  visualsModalVisible: false,
-  realizationsModalVisible: false,
 };
 
 const reducer = (state, action) => {
   switch (action.type) {
     case "TOGGLE_MENU":
       return { ...state, menuActive: !state.menuActive };
-    case "SHOW_VISUALS_MODAL":
-      return { ...state, visualsModalVisible: true };
-    case "HIDE_VISUALS_MODAL":
-      return { ...state, visualsModalVisible: false };
-    case "SHOW_REALIZATIONS_MODAL":
-      return { ...state, realizationsModalVisible: true };
-    case "HIDE_REALIZATIONS_MODAL":
-      return { ...state, realizationsModalVisible: false };
     default:
       return state;
   }

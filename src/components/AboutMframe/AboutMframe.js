@@ -91,7 +91,7 @@ const AboutMframe = () => {
           zakres modyfikacji. Czy potrzebujesz czegoś jeszcze? Nie, bo to
           wszystkie daje Ci Mframe!
         </Paragraph>
-        <Button>+ MOŻLIWOŚCI</Button>
+        <Button id="mozliwosci-hero">+ MOŻLIWOŚCI</Button>
       </VerticalContainer>
       <Image />
     </AboutWrapper>

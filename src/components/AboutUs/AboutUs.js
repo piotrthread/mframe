@@ -28,7 +28,7 @@ const ImageMobile = styled.div`
   }
 `;
 
-const Button = styled.button`
+const Button = styled.a`
   -webkit-appearance: none;
   -moz-appearance: none;
   font-weight: 600;
@@ -41,9 +41,14 @@ const Button = styled.button`
   cursor: pointer;
   max-width: 200px;
   outline: none;
-  color: ${(props) => (props.white ? "white" : "black")};
+  color: black;
   transition: all 0.3s ease;
+  &:link {
+    text-decoration: none;
+    color: black;
+  }
   &:hover {
+    color: black;
     opacity: 0.6;
   }
 `;
@@ -70,7 +75,9 @@ const AboutUs = () => {
           ulotki, zapoznaj się z asortymentem na stronie lub skontaktuj się z
           nami. Służymy swoją pomocą przy wyborze najlepszych rozwiązań!
         </Paragraph>
-        <Button>+ ADSYSTEM</Button>
+        <Button href="http://www.adsystem.pl" target="_blank">
+          + ADSYSTEM
+        </Button>
       </VerticalContainer>
       <Image />
     </AboutWrapper>
