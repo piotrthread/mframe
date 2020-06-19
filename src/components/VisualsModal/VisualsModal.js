@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styled from "styled-components";
 import { Carousel } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
+import $ from "jquery";
 
 import Heading from "../Heading/Heading";
 
@@ -61,6 +62,14 @@ const GalleryWrapper = styled.div`
 
 const VisualsModal = () => {
   let history = useHistory();
+  useEffect(()=>{
+    $("html,body").animate(
+      {
+        scrollTop: $("html,body").offset().top,
+      },
+      "slow"
+    );
+  },[]);
   return (
     <>
       <ModalWrapper>
