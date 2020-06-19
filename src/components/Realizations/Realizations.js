@@ -3,13 +3,13 @@ import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 
 const MasonryWrapper = styled.div`
-  column-count: 2;
+  column-count: 1;
   column-gap: 0.6em;
-  @media (min-width: 1200px) {
-    column-count: 3;
+  @media (min-width: 900px) {
+    column-count: 2;
   }
   @media (min-width: 1600px) {
-    column-count: 4;
+    column-count: 2;
   }
 `;
 
@@ -55,7 +55,7 @@ const Container = styled.div`
 
 const Image = styled.img`
   display: inline-block;
-  margin: 0 0 0.3em;
+  margin: 0 0 0.6em;
   width: 100%;
   z-index: 9999;
   filter: saturate(0) contrast(0.7) brightness(1.2);
