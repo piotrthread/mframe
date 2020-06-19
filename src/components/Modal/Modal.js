@@ -1,10 +1,9 @@
-import React,{useEffect} from "react";
-import {useHistory} from "react-router-dom";
+import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 
 import HeadingModal from "../HeadingModal/HeadingModal";
 import HeadingMedium from "../HeadingMedium/HeadingMedium";
-
 
 const Button = styled.button`
   -webkit-appearance: none;
@@ -83,30 +82,30 @@ const Paragraph = styled.p`
 
 const Modal = (props) => {
   let history = useHistory();
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo(0, 0);
-  },[]);
+  }, []);
   return (
     <>
-        <ModalWrapper>
-          <HeadingModal
-            bold={props.modal.name}
-            thin={props.modal.subname ? props.modal.subname : null}
-          />
-          <HeadingMedium
-            bold={props.modal.name}
-            thin={props.modal.subname ? props.modal.subname : null}
-          />
-          <SectionWrapper>
-            {props.modal.images.map((img, index) => (
-              <Img src={img} alt={index} />
-            ))}
-            <Paragraph>{props.modal.info}</Paragraph>
-          </SectionWrapper>
-          <Button onClick={(()=>history.goBack())}>
-            <Icon src="./images/close.png" />
-          </Button>
-        </ModalWrapper>
+      <ModalWrapper>
+        <HeadingModal
+          bold={props.modal.name}
+          thin={props.modal.subname ? props.modal.subname : null}
+        />
+        <HeadingMedium
+          bold={props.modal.name}
+          thin={props.modal.subname ? props.modal.subname : null}
+        />
+        <SectionWrapper>
+          {props.modal.images.map((img, index) => (
+            <Img src={img} alt={index} />
+          ))}
+          <Paragraph>{props.modal.info}</Paragraph>
+        </SectionWrapper>
+        <Button>
+          <Icon onClick={() => history.goBack()} src="./images/close.png" />
+        </Button>
+      </ModalWrapper>
     </>
   );
 };
