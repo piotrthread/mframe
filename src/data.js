@@ -2,7 +2,7 @@ export const modals = {
   akcesoria: {
     name: "Akcesoria",
     tags:
-      "Donut icing jujubes marshmallow. Bear claw tart cookie. Bear claw pastry brownie marzipan lemon drops.",
+      "Oferujemy standardowe akcesoria do ekspozycji produktów takie jak półki czy panele na zawieszki. Dodatkowo stoisko wzbogacić możemy o TV na systemowym uchwycie, oświetlenie LED czy pomieszczenie gospodarcze z drzwiami zamykanymi na klucz.",
     info:
       "Donut icing jujubes marshmallow. Bear claw tart cookie. Bear claw pastry brownie marzipan lemon drops. Icing jelly beans topping brownie lollipop jelly beans tart carrot cake. Halvah jelly-o ice cream sweet roll icing chocolate bar cake. Cheesecake sesame snaps brownie ice cream cheesecake apple pie. Icing apple pie tiramisu lollipop danish topping dessert. Bear claw sesame snaps toffee chocolate cake. Chocolate bar oat cake cupcake. Cupcake pastry oat cake carrot cake. Marzipan soufflé dragée jelly tootsie roll cookie. Cotton candy jujubes sweet roll toffee. Pastry lollipop wafer. Sesame snaps wafer tiramisu lollipop. Cupcake donut sweet roll. Topping muffin gummi bears muffin jelly beans. Gingerbread caramels apple pie sweet biscuit candy pastry. Marzipan liquorice cotton candy wafer tootsie roll. Pastry cheesecake chupa chups tart jujubes sugar plum. Oat cake ice cream chocolate cake candy canes. Gummi bears powder jelly carrot cake jelly beans. Wafer biscuit dessert dragée jelly beans. Marzipan lemon drops lemon drops gingerbread bear claw sweet roll marzipan toffee. Dessert gummies caramels.",
     images: ["./images/accesories.jpg"],
@@ -11,7 +11,7 @@ export const modals = {
     name: "Wyposażenie",
     subname: "stoiska",
     tags:
-      "Donut icing jujubes marshmallow. Bear claw tart cookie. Bear claw pastry brownie marzipan lemon drops.",
+      "Uzupełnimy stoisko meblami, trybunkami czy stojakami na ulotki. Wyróżnimy je logotypem za styroduru bądź logotypem podświetlanym. ",
     info:
       "Donut icing jujubes marshmallow. Bear claw tart cookie. Bear claw pastry brownie marzipan lemon drops. Icing jelly beans topping brownie lollipop jelly beans tart carrot cake. Halvah jelly-o ice cream sweet roll icing chocolate bar cake. Cheesecake sesame snaps brownie ice cream cheesecake apple pie. Icing apple pie tiramisu lollipop danish topping dessert. Bear claw sesame snaps toffee chocolate cake. Chocolate bar oat cake cupcake. Cupcake pastry oat cake carrot cake. Marzipan soufflé dragée jelly tootsie roll cookie. Cotton candy jujubes sweet roll toffee. Pastry lollipop wafer. Sesame snaps wafer tiramisu lollipop. Cupcake donut sweet roll. Topping muffin gummi bears muffin jelly beans. Gingerbread caramels apple pie sweet biscuit candy pastry. Marzipan liquorice cotton candy wafer tootsie roll. Pastry cheesecake chupa chups tart jujubes sugar plum. Oat cake ice cream chocolate cake candy canes. Gummi bears powder jelly carrot cake jelly beans. Wafer biscuit dessert dragée jelly beans. Marzipan lemon drops lemon drops gingerbread bear claw sweet roll marzipan toffee. Dessert gummies caramels.",
     images: ["./images/additional_stuff.jpg"],
@@ -19,7 +19,8 @@ export const modals = {
   kasetony: {
     name: "Kasetony",
     subname: "LED",
-    tags: "Donut icing jujubes marshmallow. Bear claw tart cookie. Bear claw pastry brownie marzipan lemon drops.",
+    tags:
+      "Obawiasz się, że na stoisku będzie zbyt ciemno? Zamiast ram Mframe zastosować możemy kasetony podświetlane, kasetony dynamiczne bądź led screeny, które ożywią przestrzeń. ",
     info:
       "Donut icing jujubes marshmallow. Bear claw tart cookie. Bear claw pastry brownie marzipan lemon drops. Icing jelly beans topping brownie lollipop jelly beans tart carrot cake. Halvah jelly-o ice cream sweet roll icing chocolate bar cake. Cheesecake sesame snaps brownie ice cream cheesecake apple pie. Icing apple pie tiramisu lollipop danish topping dessert. Bear claw sesame snaps toffee chocolate cake. Chocolate bar oat cake cupcake. Cupcake pastry oat cake carrot cake. Marzipan soufflé dragée jelly tootsie roll cookie. Cotton candy jujubes sweet roll toffee. Pastry lollipop wafer. Sesame snaps wafer tiramisu lollipop. Cupcake donut sweet roll. Topping muffin gummi bears muffin jelly beans. Gingerbread caramels apple pie sweet biscuit candy pastry. Marzipan liquorice cotton candy wafer tootsie roll. Pastry cheesecake chupa chups tart jujubes sugar plum. Oat cake ice cream chocolate cake candy canes. Gummi bears powder jelly carrot cake jelly beans. Wafer biscuit dessert dragée jelly beans. Marzipan lemon drops lemon drops gingerbread bear claw sweet roll marzipan toffee. Dessert gummies caramels.",
     images: ["./images/lightboxes.jpg"],
@@ -27,7 +28,8 @@ export const modals = {
   podloga: {
     name: "Podłoga",
     subname: "systemowa",
-    tags: "Donut icing jujubes marshmallow. Bear claw tart cookie. Bear claw pastry brownie marzipan lemon drops.",
+    tags:
+      "Podniesiona podłoga dodaje prestiżu. Na niej zastosować możemy wykładzinę targową bądź panele w macie lub połysku. Dodatkowo pozwoli ukryć okablowanie. ",
     info:
       "Donut icing jujubes marshmallow. Bear claw tart cookie. Bear claw pastry brownie marzipan lemon drops. Icing jelly beans topping brownie lollipop jelly beans tart carrot cake. Halvah jelly-o ice cream sweet roll icing chocolate bar cake. Cheesecake sesame snaps brownie ice cream cheesecake apple pie. Icing apple pie tiramisu lollipop danish topping dessert. Bear claw sesame snaps toffee chocolate cake. Chocolate bar oat cake cupcake. Cupcake pastry oat cake carrot cake. Marzipan soufflé dragée jelly tootsie roll cookie. Cotton candy jujubes sweet roll toffee. Pastry lollipop wafer. Sesame snaps wafer tiramisu lollipop. Cupcake donut sweet roll. Topping muffin gummi bears muffin jelly beans. Gingerbread caramels apple pie sweet biscuit candy pastry. Marzipan liquorice cotton candy wafer tootsie roll. Pastry cheesecake chupa chups tart jujubes sugar plum. Oat cake ice cream chocolate cake candy canes. Gummi bears powder jelly carrot cake jelly beans. Wafer biscuit dessert dragée jelly beans. Marzipan lemon drops lemon drops gingerbread bear claw sweet roll marzipan toffee. Dessert gummies caramels.",
     images: ["./images/floor.jpg"],
@@ -35,7 +37,8 @@ export const modals = {
   podwieszane: {
     name: "Systemy",
     subname: "podwieszane",
-    tags: "Donut icing jujubes marshmallow. Bear claw tart cookie. Bear claw pastry brownie marzipan lemon drops.",
+    tags:
+      "Proponujemy szeroką gamę systemów rurowych oraz kasetonów, które możemy podwiesić do sufitu. Dzięki temu łatwiej będzie klientowi zlokalizować stoisko. ",
     info:
       "Donut icing jujubes marshmallow. Bear claw tart cookie. Bear claw pastry brownie marzipan lemon drops. Icing jelly beans topping brownie lollipop jelly beans tart carrot cake. Halvah jelly-o ice cream sweet roll icing chocolate bar cake. Cheesecake sesame snaps brownie ice cream cheesecake apple pie. Icing apple pie tiramisu lollipop danish topping dessert. Bear claw sesame snaps toffee chocolate cake. Chocolate bar oat cake cupcake. Cupcake pastry oat cake carrot cake. Marzipan soufflé dragée jelly tootsie roll cookie. Cotton candy jujubes sweet roll toffee. Pastry lollipop wafer. Sesame snaps wafer tiramisu lollipop. Cupcake donut sweet roll. Topping muffin gummi bears muffin jelly beans. Gingerbread caramels apple pie sweet biscuit candy pastry. Marzipan liquorice cotton candy wafer tootsie roll. Pastry cheesecake chupa chups tart jujubes sugar plum. Oat cake ice cream chocolate cake candy canes. Gummi bears powder jelly carrot cake jelly beans. Wafer biscuit dessert dragée jelly beans. Marzipan lemon drops lemon drops gingerbread bear claw sweet roll marzipan toffee. Dessert gummies caramels.",
     images: ["./images/hanging.jpg"],
@@ -44,7 +47,7 @@ export const modals = {
     name: "Usługi",
     subname: "dodatkowe",
     tags:
-      "Donut icing jujubes marshmallow. Bear claw tart cookie. Bear claw pastry brownie marzipan lemon drops.",
+      "Klienci decydują się na modułowe rozwiązania nie tylko ze względu na samodzielny montaż - ich wielokrotne użycie pozwala na spore oszczędności a my oferujemy magazynowanie, logistykę, montaż i demontaż. Możesz przyjechać kiedy stoisko będzie już gotowe. ",
     info:
       "Donut icing jujubes marshmallow. Bear claw tart cookie. Bear claw pastry brownie marzipan lemon drops. Icing jelly beans topping brownie lollipop jelly beans tart carrot cake. Halvah jelly-o ice cream sweet roll icing chocolate bar cake. Cheesecake sesame snaps brownie ice cream cheesecake apple pie. Icing apple pie tiramisu lollipop danish topping dessert. Bear claw sesame snaps toffee chocolate cake. Chocolate bar oat cake cupcake. Cupcake pastry oat cake carrot cake. Marzipan soufflé dragée jelly tootsie roll cookie. Cotton candy jujubes sweet roll toffee. Pastry lollipop wafer. Sesame snaps wafer tiramisu lollipop. Cupcake donut sweet roll. Topping muffin gummi bears muffin jelly beans. Gingerbread caramels apple pie sweet biscuit candy pastry. Marzipan liquorice cotton candy wafer tootsie roll. Pastry cheesecake chupa chups tart jujubes sugar plum. Oat cake ice cream chocolate cake candy canes. Gummi bears powder jelly carrot cake jelly beans. Wafer biscuit dessert dragée jelly beans. Marzipan lemon drops lemon drops gingerbread bear claw sweet roll marzipan toffee. Dessert gummies caramels.",
     images: ["./images/more.jpg"],

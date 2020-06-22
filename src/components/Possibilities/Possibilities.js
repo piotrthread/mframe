@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 
 import HeadingSmall from "../HeadingSmall/HeadingSmall";
@@ -23,11 +23,11 @@ const Paragraph = styled.p`
 const Img = styled.img`
   width: 100%;
   overflow: hidden;
-  filter:brightness(1);
+  /* filter: brightness(1);
   transition: filter 0.3s ease;
   &:hover {
-    filter:brightness(.85);
-  }
+    filter: brightness(0.85);
+  } */
 `;
 
 const Feature = styled.div`
@@ -38,7 +38,6 @@ const Feature = styled.div`
   align-items: center;
   padding: 0 0.5em;
   margin-bottom: 50px;
-  cursor: pointer;
   @media (max-width: 920px) {
     flex-basis: 50%;
   }
@@ -48,12 +47,13 @@ const Feature = styled.div`
 `;
 
 const Possibilities = () => {
-  let history = useHistory();
+  // let history = useHistory();
   return (
     <Wrapper>
       {Object.keys(modals).map((id, index) => {
         return (
-          <Feature onClick={() => history.push(`/${id}`)} key={id}>
+          // <Feature onClick={() => history.push(`/${id}`)} key={id}>
+          <Feature key={id}>
             <Img src={modals[id].images[0]} />
             <HeadingSmall
               bold={modals[id].name}

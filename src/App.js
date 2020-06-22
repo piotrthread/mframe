@@ -5,23 +5,23 @@ import GlobalStyle from "./GlobalStyle";
 import StateProvider from "./StateProvider";
 
 import LandingPage from "./components/LandingPage/LandingPage";
-import Modal from "./components/Modal/Modal";
+// import Modal from "./components/Modal/Modal";
 import VisualsModal from "./components/VisualsModal/VisualsModal";
 import RealizationsModal from "./components/RealizationsModal/RealizationsModal";
-import { modals } from "./data";
+// import { modals } from "./data";
 
 const App = () => {
   return (
     <StateProvider>
       <GlobalStyle />
       <Router>
-        {Object.keys(modals).map((id, index) => {
+        {/* {Object.keys(modals).map((id, index) => {
           return (
             <Route path={`/${id}`} key={index}>
               <Modal modal={modals[id]} />
             </Route>
           );
-        })}
+        })} */}
         <Route path="/wizualizacje">
           <VisualsModal />
         </Route>
