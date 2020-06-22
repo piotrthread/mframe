@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import { Carousel } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
+import { visuals } from "../../data";
+import ImageGallery from "react-image-gallery";
 
 import Heading from "../Heading/Heading";
 
@@ -71,29 +72,12 @@ const VisualsModal = () => {
           <Heading bold="Wizualizacje" thin="mframe" />
         </Smaller>
         <GalleryWrapper>
-          <Carousel>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="http://via.placeholder.com/1920x1080"
-                alt="slider-img"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="http://via.placeholder.com/1920x1080"
-                alt="slider-img"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="http://via.placeholder.com/1920x1080"
-                alt="slider-img"
-              />
-            </Carousel.Item>
-          </Carousel>
+          <ImageGallery
+            items={visuals}
+            showFullscreenButton={false}
+            showPlayButton={false}
+            showThumbnails={false}
+          />
         </GalleryWrapper>
         <Button onClick={() => history.push("/")}>
           <Icon src="./images/close.png" />
