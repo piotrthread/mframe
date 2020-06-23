@@ -56,15 +56,87 @@ export const modals = {
 
 export const visuals = [
   {
-    original: "https://picsum.photos/id/1018/1000/600/",
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
+    original: "./images/visuals/vis1.jpg",
+    thumbnail: "./images/visuals/vis1.jpg",
   },
   {
-    original: "https://picsum.photos/id/1015/1000/600/",
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
+    original: "./images/visuals/vis2.jpg",
+    thumbnail: "./images/visuals/vis2.jpg",
   },
   {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
+    original: "./images/visuals/vis3.jpg",
+    thumbnail: "./images/visuals/vis3.jpg",
+  },
+  {
+    original: "./images/visuals/vis4.jpg",
+    thumbnail: "./images/visuals/vis4.jpg",
+  },
+  {
+    original: "./images/visuals/vis5.jpg",
+    thumbnail: "./images/visuals/vis5.jpg",
+  },
+  {
+    original: "./images/visuals/vis6.jpg",
+    thumbnail: "./images/visuals/vis6.jpg",
+  },
+  {
+    original: "./images/visuals/vis7.jpg",
+    thumbnail: "./images/visuals/vis7.jpg",
+  },
+  {
+    original: "./images/visuals/vis8.jpg",
+    thumbnail: "./images/visuals/vis8.jpg",
+  },
+  {
+    original: "./images/visuals/vis9.jpg",
+    thumbnail: "./images/visuals/vis9.jpg",
+  },
+  {
+    original: "./images/visuals/vis10.jpg",
+    thumbnail: "./images/visuals/vis10.jpg",
+  },
+  {
+    original: "./images/visuals/vis11.jpg",
+    thumbnail: "./images/visuals/vis11.jpg",
+  },
+  {
+    original: "./images/visuals/vis12.jpg",
+    thumbnail: "./images/visuals/vis12.jpg",
+  },
+  {
+    original: "./images/visuals/vis13.jpg",
+    thumbnail: "./images/visuals/vis13.jpg",
+  },
+  {
+    original: "./images/visuals/vis14.jpg",
+    thumbnail: "./images/visuals/vis14.jpg",
+  },
+  {
+    original: "./images/visuals/vis15.jpg",
+    thumbnail: "./images/visuals/vis15.jpg",
+  },
+  {
+    original: "./images/visuals/vis16.jpg",
+    thumbnail: "./images/visuals/vis16.jpg",
+  },
+  {
+    original: "./images/visuals/vis17.jpg",
+    thumbnail: "./images/visuals/vis17.jpg",
+  },
+  {
+    original: "./images/visuals/vis18.jpg",
+    thumbnail: "./images/visuals/vis18.jpg",
+  },
+  {
+    original: "./images/visuals/vis19.jpg",
+    thumbnail: "./images/visuals/vis19.jpg",
+  },
+  {
+    original: "./images/visuals/vis20.jpg",
+    thumbnail: "./images/visuals/vis20.jpg",
+  },
+  {
+    original: "./images/visuals/vis21.jpg",
+    thumbnail: "./images/visuals/vis21.jpg",
   },
 ];

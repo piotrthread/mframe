@@ -68,7 +68,7 @@ const Image = styled.img`
 
 const Visuals = () => {
   let history = useHistory();
-  const pics = Array(4).fill(null);
+  const pics = Array(7).fill(null);
   return (
     <Container onClick={() => history.push("/wizualizacje")}>
       <MasonryWrapper id="wizualizacje">
