@@ -55,9 +55,9 @@ const Animage = () => {
         onClick={toggleImage}
         id="mozliwosci"
       >
-        <Image src="./images/grafa.jpg" />
+        <Image src="./images/rama.jpg" />
         <Image
-          src="./images/rama.jpg"
+          src="./images/grafa.jpg"
           style={!hover ? { opacity: 0 } : { opacity: 1 }}
         />
       </Wrapper>
