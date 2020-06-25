@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 
 const MasonryWrapper = styled.div`
-  column-count: 1;
+  column-count: 2;
   column-gap: 0.6em;
   @media (min-width: 900px) {
     column-count: 2;
@@ -14,43 +14,11 @@ const MasonryWrapper = styled.div`
 `;
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 85vh;
-  overflow: hidden;
   position: relative;
-  cursor: pointer;
-  @media (min-width: 1250px) {
-    height: 100vh;
-  }
-  @media (min-width: 1250px) {
-    height: 650px;
-  }
-  @media (min-width: 1600px) {
-    height: 800px;
-  }
-
-  &::before {
-    display: block;
-    content: "";
-    position: absolute;
-    z-index: 5;
-    width: 100%;
-    height: 50px;
-    background-color: white;
-    bottom: 0;
-  }
-  &::after {
-    display: block;
-    content: "";
-    position: absolute;
-    z-index: 5;
-    width: 100%;
-    height: 20px;
-    background: url("./images/arrow.png") no-repeat;
-    background-size: contain;
-    background-position: center;
-    bottom: 5px;
-  }
+  transition: all 1s ease;
 `;
 
 const Image = styled.img`
@@ -65,22 +33,43 @@ const Image = styled.img`
   }
 `;
 
+const Button = styled.button`
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-weight: 600;
+  font-size: 15px;
+  border: 1px solid ${(props) => (props.white ? "white" : "black")};
+  background-color: rgba(0, 0, 0, 0);
+  padding: 25px 40px;
+  letter-spacing: 0.5px;
+  align-self: flex-end;
+  cursor: pointer;
+  max-width: 155px;
+  outline: none;
+  color: ${(props) => (props.white ? "white" : "black")};
+  transition: all 0.3s ease;
+  &:hover {
+    opacity: 0.6;
+  }
+`;
+
 const Realizations = () => {
   let history = useHistory();
-  const pics = Array(22).fill(null);
+  const pics = Array(4).fill(null);
   return (
-    <Container onClick={() => history.push("/realizacje")}>
+    <Container>
       <MasonryWrapper id="realizacje">
         {pics.map((element, index) => {
           return (
             <Image
               key={index}
-              src={`./images/realizacje/mframe_ (${index + 1}).jpg`}
+              src={`./images/realizacje/mframe_(${index + 1}).jpg`}
               alt={index + 1}
             />
           );
         })}
       </MasonryWrapper>
+      <Button onClick={() => history.push("/realizacje")}>+ WIĘCEJ</Button>
     </Container>
   );
 };

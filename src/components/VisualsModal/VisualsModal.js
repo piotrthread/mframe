@@ -79,7 +79,7 @@ const VisualsModal = () => {
             showThumbnails={false}
           />
         </GalleryWrapper>
-        <Button onClick={() => history.push("/")}>
+        <Button onClick={() => history.goBack()}>
           <Icon src="./images/close.png" />
         </Button>
       </ModalWrapper>
