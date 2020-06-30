@@ -14,7 +14,7 @@ const App = () => {
   return (
     <StateProvider>
       <GlobalStyle />
-      <Router>
+      <Router basename="/">
         {/* {Object.keys(modals).map((id, index) => {
           return (
             <Route path={`/${id}`} key={index}>
