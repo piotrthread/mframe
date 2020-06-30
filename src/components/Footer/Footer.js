@@ -110,7 +110,7 @@ const Footer = () => {
           <Icon src="./images/facebook.png" />
         </SocialLink>
         <SocialLink
-          href="https://www.youtube.com/channel/UCwaSpQ9akHeEGIjnPoUhiLw"
+          href="https://www.youtube.com/playlist?list=PLIFbL5lAZKqd6XYvcgRr1EvaU0nHw4mm6"
           target="_blank"
         >
           <Icon src="./images/youtube.png" />
